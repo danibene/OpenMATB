@@ -1,4 +1,4 @@
-Stress;How stressed did you feel?;Low/High;0/10/5
+Stress;How would you describe your level of stress right now?;No stress/Worst stress possible;0/10/5
 <newpage>
 Mental demand;How much mental and perceptual activity was required (e.g., thinking, deciding, calculating, remembering, looking, searching, etc.)? Was the task easy or demanding, simple or complex, exacting or forgiving?;Low/High;0/10/5
 Physical demand;How much physical activity was required (e.g., pushing, pulling, turning, controlling, activating, etc.)? Was the task easy or demanding, slow or brisk, slack or strenuous, restful or laborious?;Low/High;0/10/5
