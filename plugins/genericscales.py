@@ -88,13 +88,7 @@ class Genericscales(BlockingPlugin):
     def stop(self):
         for slider_name, slider_widget in self.sliders.items():
             self.log_performance(slider_widget.get_title(), slider_widget.get_value())
-        
-        # Clear the sliders dictionary
-        self.sliders.clear()
-
-        # Refresh the widgets
-        self.refresh_widgets()
-            
+                    
         super().stop()
         
 
