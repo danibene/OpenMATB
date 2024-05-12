@@ -25,10 +25,23 @@ class Genericscales(BlockingPlugin):
         self.question_interspace = 0.05  # Space to leave between two questions
         self.top_to_top = self.question_interspace + self.question_height_ratio
     
+    def remove_potential_sliders(self):
+        widgets_to_remove = []
+        for widget in self.widgets:
+            if isinstance(self.widgets[widget], Slider):
+                widgets_to_remove.append(widget)
+            elif "label_" in widget and isinstance(self.widgets[widget], Simpletext):
+                widgets_to_remove.append(widget)
+        
+        for widget in widgets_to_remove:
+            del self.widgets[widget]
     
     def make_slide_graphs(self):
+        # Remove potential previous sliders
+        self.remove_potential_sliders()
+
         super().make_slide_graphs()
-            
+        
         scales = self.current_slide.split('\n')
         scale_list = [s.strip() for s in scales if len(s.strip()) > 0]
         if len(scale_list) == 0:
@@ -75,6 +88,13 @@ class Genericscales(BlockingPlugin):
     def stop(self):
         for slider_name, slider_widget in self.sliders.items():
             self.log_performance(slider_widget.get_title(), slider_widget.get_value())
+        
+        # Clear the sliders dictionary
+        self.sliders.clear()
+
+        # Refresh the widgets
+        self.refresh_widgets()
+            
         super().stop()
         
 
