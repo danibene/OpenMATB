@@ -26,6 +26,7 @@ class Genericscales(BlockingPlugin):
         self.top_to_top = self.question_interspace + self.question_height_ratio
     
     def remove_potential_sliders(self):
+        self.sliders = dict()
         widgets_to_remove = []
         for widget in self.widgets:
             if isinstance(self.widgets[widget], Slider):
@@ -34,6 +35,7 @@ class Genericscales(BlockingPlugin):
                 widgets_to_remove.append(widget)
         
         for widget in widgets_to_remove:
+            print(f"Removing {widget}")
             del self.widgets[widget]
     
     def make_slide_graphs(self):
@@ -50,6 +52,7 @@ class Genericscales(BlockingPlugin):
         all_scales_container = self.container.get_reduced(1, self.top_to_top*(len(scale_list)))
         
         height_in_prop = (self.question_height_ratio * self.container.h)/all_scales_container.h
+        
         for l, scale in enumerate(scale_list):
 
             # Define the scale main container (question + response slider)            
@@ -67,6 +70,7 @@ class Genericscales(BlockingPlugin):
                 self.add_widget(f'label_{l+1}', Simpletext, container=text_container,
                                 text=label, wrap_width=0.8, font_size=F['MEDIUM'], 
                                 draw_order=self.m_draw)
+                
             
                 self.sliders[f'slider_{l+1}'] = self.add_widget(f'slider_{l+1}', Slider, 
                                 container=slider_container,
@@ -82,12 +86,20 @@ class Genericscales(BlockingPlugin):
 
         for slider_name, slider in self.sliders.items():
             slider.update()
+    
+    def update(self, dt):
+        #print(self.paused, self.visible)
+        if self.go_to_next_slide == True:
+            self.log_all_performance()
+        super().update(dt)
         
-
+    def log_all_performance(self):
+        for slider_name, slider_widget in self.sliders.items():
+            print(f"Logging {slider_widget.get_title()}")
+            self.log_performance(slider_widget.get_title(), slider_widget.get_value())
     
     def stop(self):
-        for slider_name, slider_widget in self.sliders.items():
-            self.log_performance(slider_widget.get_title(), slider_widget.get_value())
+        self.log_all_performance()
                     
         super().stop()
         
