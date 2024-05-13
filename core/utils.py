@@ -44,7 +44,7 @@ def find_the_last_session_number():
 def get_conf_value(section, key, val_type=None):
 
     # Read the configuration file
-    config_path = P['PLUGINS'].parent.joinpath(resource_path(Path("configs", "config.ini")))
+    config_path = P['PLUGINS'].parent.joinpath(resource_path(Path("assets", "config.ini")))
     config = configparser.ConfigParser()
     config.read(config_path)
 

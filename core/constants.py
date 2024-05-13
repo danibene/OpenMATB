@@ -34,11 +34,11 @@ BFLIM = 15
 
 PATHS = dict(PLUGINS=resource_path('plugins'))
 PATHS.update({"SESSIONS": Path("sessions")})
-PATHS.update({k.upper():resource_path(Path('includes', k))
+PATHS.update({k.upper():resource_path(Path('assets','includes', k))
               for k in ['img', 'instructions', 'scenarios', 'sounds', 'questionnaires']})
 
 [path.mkdir(parents=False, exist_ok=True) for p, path in PATHS.items() if path.exists() is False]
-PATHS['SCENARIO_ERRORS'] = resource_path(Path("configs", "last_scenario_errors.log"))
+PATHS['SCENARIO_ERRORS'] = resource_path(Path("assets", "last_scenario_errors.log"))
 
 MATCHING_ALIAS = M = dict(sysmon=_('System monitoring'),
                           track=_('Tracking'),

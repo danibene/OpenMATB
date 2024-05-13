@@ -34,7 +34,7 @@ class Scheduler:
                 self.win.push_handlers(self.plugins[p].on_key_press,
                                        self.plugins[p].on_key_release)
 
-        logger.log_manual_entry(open(resource_path(Path('configs', 'VERSION')), 'r').read().strip(), key='version')
+        logger.log_manual_entry(open(resource_path(Path('assets', 'VERSION')), 'r').read().strip(), key='version')
 
         if 'scheduling' in self.plugins:
             self.plugins['scheduling'].set_planning(self.events)
