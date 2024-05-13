@@ -5,6 +5,7 @@
 import sys
 from pyglet.graphics import OrderedGroup as Group
 from pathlib import Path
+from load.loader import resource_path
 
 REPLAY_MODE = len(sys.argv) > 1 and sys.argv[1] == '-r'
 REPLAY_STRIP_PROPORTION = 0.08
@@ -31,12 +32,13 @@ PLUGIN_TITLE_HEIGHT_PROPORTION = 0.1
 # Limit between the background and the foreground in relation with draw order
 BFLIM = 15
 
-PATHS = {k.upper():Path('.', k) for k in ['plugins', 'sessions']}
-PATHS.update({k.upper():Path('.', 'includes', k)
+PATHS = dict(PLUGINS=resource_path('plugins'))
+PATHS.update({"SESSIONS": Path("sessions")})
+PATHS.update({k.upper():resource_path(Path('includes', k))
               for k in ['img', 'instructions', 'scenarios', 'sounds', 'questionnaires']})
 
 [path.mkdir(parents=False, exist_ok=True) for p, path in PATHS.items() if path.exists() is False]
-PATHS['SCENARIO_ERRORS'] = Path('.', 'last_scenario_errors.log')
+PATHS['SCENARIO_ERRORS'] = resource_path(Path("configs", "last_scenario_errors.log"))
 
 MATCHING_ALIAS = M = dict(sysmon=_('System monitoring'),
                           track=_('Tracking'),
