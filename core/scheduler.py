@@ -86,7 +86,8 @@ class Scheduler:
         # Check if there are active plugins...
         if len(self.get_active_plugins()) > 0:
             # ... if so, update them
-            [p.update(self.scenario_time) for p in self.get_active_plugins()]
+            for p in self.get_active_plugins():
+                p.update(self.scenario_time)
 
 
     def check_if_must_exit(self):
