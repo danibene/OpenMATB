@@ -69,13 +69,13 @@ jobs:
       - name: Set path specifier for Unix
         if: runner.os != 'Windows'
         id: set-path-specifier-unix
-        run: echo "::set-output name=path_specifier:::"
+        run: echo "path_specifier=:"
         shell: bash
 
       - name: Set path specifier for Windows
         if: runner.os == 'Windows'
         id: set-path-specifier-windows
-        run: echo "::set-output name=path_specifier::;"
+        run: echo "path_specifier=;"
         shell: pwsh
               
       - name: Create Executable
