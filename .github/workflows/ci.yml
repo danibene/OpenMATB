@@ -56,10 +56,10 @@ jobs:
         env:
           HOMEBREW_NO_AUTO_UPDATE: 1
       
-      - name: Set up Python 3.9
+      - name: Set up Python 3.11
         uses: actions/setup-python@v5
         with:
-          python-version: 3.9
+          python-version: 3.11
       
       - name: Create .venv
         run: python -m venv .venv
@@ -70,7 +70,7 @@ jobs:
       - name: Create Executable
         uses: sayyid5416/pyinstaller@v1
         with:
-          python_ver: '3.9'
+          python_ver: '3.11'
           spec: 'main.py'
           requirements: 'requirements.txt'
           upload_exe_with_name: 'My executable'
