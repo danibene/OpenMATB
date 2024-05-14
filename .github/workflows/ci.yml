@@ -66,10 +66,18 @@ jobs:
       - name: Install current package in .venv
         run: pip install pyglet==1.5.26 rstr==3.1.0 pyparallel==0.2.2 pylsl==1.16.1
 
-      - name: Set path specifier
-        id: set-path-specifier
-        run: echo "::set-output name=path_specifier::$(if [ $RUNNER_OS == 'Windows' ]; then echo ';'; else echo ':'; fi)"
-      
+      - name: Set path specifier for Unix
+        if: runner.os != 'Windows'
+        id: set-path-specifier-unix
+        run: echo "::set-output name=path_specifier:::"
+        shell: bash
+
+      - name: Set path specifier for Windows
+        if: runner.os == 'Windows'
+        id: set-path-specifier-windows
+        run: echo "::set-output name=path_specifier::;"
+        shell: pwsh
+              
       - name: Create Executable
         uses: sayyid5416/pyinstaller@v1
         with:
