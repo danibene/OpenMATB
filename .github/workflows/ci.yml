@@ -67,21 +67,21 @@ jobs:
         run: pip install pyglet==1.5.26 rstr==3.1.0 pyparallel==0.2.2 pylsl==1.16.1
 
       - name: Create Executable on Unix
-      if: matrix.platform != 'windows-latest'
-        uses: sayyid5416/pyinstaller@v1
-        with:
-          python_ver: '3.11'
-          spec: 'main.py'
-          requirements: 'requirements.txt'
-          upload_exe_with_name: 'My executable'
-          options: --onefile, --name "My App ${{ matrix.platform }}", --windowed, --add-data "assets:assets/"
+        if: matrix.platform != 'windows-latest'
+          uses: sayyid5416/pyinstaller@v1
+          with:
+            python_ver: '3.11'
+            spec: 'main.py'
+            requirements: 'requirements.txt'
+            upload_exe_with_name: 'My executable'
+            options: --onefile, --name "My App ${{ matrix.platform }}", --windowed, --add-data "assets:assets/"
 
       - name: Create Executable on Windows
-      if: matrix.platform == 'windows-latest'
-        uses: sayyid5416/pyinstaller@v1
-        with:
-          python_ver: '3.11'
-          spec: 'main.py'
-          requirements: 'requirements.txt'
-          upload_exe_with_name: 'My executable'
-          options: --onefile, --name "My App ${{ matrix.platform }}", --windowed, --add-data "assets;assets/"
+        if: matrix.platform == 'windows-latest'
+          uses: sayyid5416/pyinstaller@v1
+          with:
+            python_ver: '3.11'
+            spec: 'main.py'
+            requirements: 'requirements.txt'
+            upload_exe_with_name: 'My executable'
+            options: --onefile, --name "My App ${{ matrix.platform }}", --windowed, --add-data "assets;assets/"
