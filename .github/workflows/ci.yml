@@ -83,5 +83,5 @@ jobs:
           python_ver: '3.11'
           spec: 'main.py'
           requirements: 'requirements.txt'
-          upload_exe_with_name: 'My executable'
+          upload_exe_with_name: 'My executable ${{ matrix.platform }}'
           options: --onefile, --name "My App ${{ matrix.platform }}", --windowed, --add-data "assets;assets/"
