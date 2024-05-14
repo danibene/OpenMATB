@@ -64,7 +64,7 @@ jobs:
         run: python -m venv .venv
 
       - name: Install current package in .venv
-        run: .venv/bin/pip install pyglet==1.5.26 rstr==3.1.0 pyparallel==0.2.2 pylsl==1.16.1
+        run: pip install pyglet==1.5.26 rstr==3.1.0 pyparallel==0.2.2 pylsl==1.16.1
 
       - name: Set path specifier
         id: set-path-specifier
