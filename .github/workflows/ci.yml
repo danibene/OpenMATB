@@ -65,6 +65,10 @@ jobs:
 
       - name: Install current package in .venv
         run: pip install pyglet==1.5.26 rstr==3.1.0 pyparallel==0.2.2 pylsl==1.16.1
+      
+      - name: Get current date
+        id: date
+        run: echo "::set-output name=date::$(date +'%Y-%m-%d')"
 
       - name: Create Executable on Unix
         if: matrix.platform != 'windows-latest'
@@ -74,7 +78,7 @@ jobs:
           spec: 'main.py'
           requirements: 'requirements.txt'
           upload_exe_with_name: 'My executable'
-          options: --onefile, --name "My App ${{ matrix.platform }}", --windowed, --add-data "assets:assets/"
+          options: --onefile, --name "My App ${{ matrix.platform }} ${{ steps.date.outputs.date }}", --windowed, --add-data "assets:assets/"
 
       - name: Create Executable on Windows
         if: matrix.platform == 'windows-latest'
@@ -84,4 +88,4 @@ jobs:
           spec: 'main.py'
           requirements: 'requirements.txt'
           upload_exe_with_name: 'My executable ${{ matrix.platform }}'
-          options: --onefile, --name "My App ${{ matrix.platform }}", --windowed, --add-data "assets;assets/"
+          options: --onefile, --name "My App ${{ matrix.platform }} ${{ steps.date.outputs.date }}", --windowed, --add-data "assets;assets/"
