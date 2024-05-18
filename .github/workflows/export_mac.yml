@@ -2,7 +2,7 @@
 # MODIFY IT ACCORDING TO YOUR NEEDS!
 # Reference: https://docs.github.com/en/actions
 
-name: export
+name: export-mac
 
 on:
   push:
@@ -28,29 +28,20 @@ concurrency:
 
 jobs:
   pyinstaller-build:
-    strategy:
-      matrix:
-        platform:
-          - ubuntu-latest
-          - macos-latest
-          - windows-latest
-    runs-on: ${{ matrix.platform }}
+    runs-on: macos-latest
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
 
       - name: Install Homebrew
-        if: matrix.platform == 'macos-latest'
         run: /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
       - name: Install gettext
-        if: matrix.platform == 'macos-latest'
         run: brew install gettext
         env:
           HOMEBREW_NO_AUTO_UPDATE: 1
 
       - name: Link gettext
-        if: matrix.platform == 'macos-latest'
         run: brew link --force gettext
         env:
           HOMEBREW_NO_AUTO_UPDATE: 1
@@ -66,26 +57,11 @@ jobs:
       - name: Install current package in .venv
         run: pip install pyglet==1.5.26 rstr==3.1.0 pyparallel==0.2.2 pylsl==1.16.1
 
-      - name: Get current datetime
-        id: datetime
-        run: echo "::set-output name=datetime::$(date +'%Y-%m-%dT%H-%M-%S')"
-
       - name: Create Executable on Unix
-        if: matrix.platform != 'windows-latest'
         uses: sayyid5416/pyinstaller@v1
         with:
           python_ver: '3.11'
           spec: 'main.py'
           requirements: 'requirements.txt'
-          upload_exe_with_name: 'My Executable ${{ matrix.platform }} ${{ steps.datetime.outputs.datetime }}_${{ github.run_number }}-${{ github.run_attempt }}'
-          options: --onefile, --name "My App ${{ matrix.platform }} ${{ steps.datetime.outputs.datetime }}_${{ github.run_number }}-${{ github.run_attempt }}", --windowed, --add-data "assets:assets/"
-
-      - name: Create Executable on Windows
-        if: matrix.platform == 'windows-latest'
-        uses: sayyid5416/pyinstaller@v1
-        with:
-          python_ver: '3.11'
-          spec: 'main.py'
-          requirements: 'requirements.txt'
-          upload_exe_with_name: 'My Executable ${{ matrix.platform }} Windows ${{ steps.datetime.outputs.datetime }}_${{ github.run_number }}-${{ github.run_attempt }}'
-          options: --onefile, --name "My App ${{ matrix.platform }} Windows ${{ steps.datetime.outputs.datetime }}_${{ github.run_number }}-${{ github.run_attempt }}", --windowed, --add-data "assets;assets/"
+          upload_exe_with_name: 'My Executable'
+          options: --onefile, --name "My App", --windowed, --add-data "assets:assets/"
