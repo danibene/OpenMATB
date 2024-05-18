@@ -66,7 +66,7 @@ jobs:
       - name: Install current package in .venv
         run: pip install pyglet==1.5.26 rstr==3.1.0 pyparallel==0.2.2 pylsl==1.16.1
       
-     - name: Get run number
+      - name: Get run number
         id: run_number
         run: echo "run_number=${{ github.run_number }}" >> $GITHUB_ENV
 
