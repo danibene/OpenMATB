@@ -65,10 +65,6 @@ jobs:
 
       - name: Install current package in .venv
         run: pip install pyglet==1.5.26 rstr==3.1.0 pyparallel==0.2.2 pylsl==1.16.1
-      
-      - name: Get run number
-        id: run_number
-        run: echo "run_number=${{ github.run_number }}" >> $GITHUB_ENV
 
       - name: Create Executable on Unix
         if: matrix.platform != 'windows-latest'
@@ -77,8 +73,8 @@ jobs:
           python_ver: '3.11'
           spec: 'main.py'
           requirements: 'requirements.txt'
-          upload_exe_with_name: 'My App ${{ matrix.platform }} ${{ env.run_number }}'
-          options: --onefile, --name "My App ${{ matrix.platform }} ${{ env.run_number }}", --windowed, --add-data "assets:assets/"
+          upload_exe_with_name: 'My App ${{ matrix.platform }} ${{ github.run_attempt }}'
+          options: --onefile, --name "My App ${{ matrix.platform }} ${{ github.run_attempt }}", --windowed, --add-data "assets:assets/"
 
       - name: Create Executable on Windows
         if: matrix.platform == 'windows-latest'
@@ -87,5 +83,5 @@ jobs:
           python_ver: '3.11'
           spec: 'main.py'
           requirements: 'requirements.txt'
-          upload_exe_with_name: 'My App ${{ matrix.platform }} ${{ env.run_number }}'
-          options: --onefile, --name "My App ${{ matrix.platform }} ${{ env.run_number }}", --windowed, --add-data "assets;assets/"
+          upload_exe_with_name: 'My App ${{ matrix.platform }} ${{ github.run_attempt }}'
+          options: --onefile, --name "My App ${{ matrix.platform }} ${{ github.run_attempt }}", --windowed, --add-data "assets;assets/"
