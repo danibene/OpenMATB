@@ -2,6 +2,7 @@
 # Institut National Universitaire Champollion (Albi, France).
 # License : CeCILL, version 2.1 (see the LICENSE file)
 
+from pathlib import Path
 import sys
 from pyglet.app import EventLoop
 from core.scenario import Event
@@ -11,6 +12,7 @@ from core.logger import logger
 from core.utils import get_conf_value
 from core.constants import REPLAY_MODE
 from core.error import errors
+from load.loader import resource_path
 
 
 
@@ -32,7 +34,7 @@ class Scheduler:
                 self.win.push_handlers(self.plugins[p].on_key_press,
                                        self.plugins[p].on_key_release)
 
-        logger.log_manual_entry(open('VERSION', 'r').read().strip(), key='version')
+        logger.log_manual_entry(open(resource_path(Path('assets', 'VERSION')), 'r').read().strip(), key='version')
 
         if 'scheduling' in self.plugins:
             self.plugins['scheduling'].set_planning(self.events)
@@ -84,7 +86,8 @@ class Scheduler:
         # Check if there are active plugins...
         if len(self.get_active_plugins()) > 0:
             # ... if so, update them
-            [p.update(self.scenario_time) for p in self.get_active_plugins()]
+            for p in self.get_active_plugins():
+                p.update(self.scenario_time)
 
 
     def check_if_must_exit(self):

@@ -1,0 +1,1 @@
+from .loader import resource_path

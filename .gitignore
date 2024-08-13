@@ -5,3 +5,7 @@ __pycache__
 capture.sublime-workspace
 audio_matb
 *.odt
+*.DS_Store
+
+build/
+dist/

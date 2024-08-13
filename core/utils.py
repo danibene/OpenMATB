@@ -1,9 +1,11 @@
 # Copyright 2023, by Julien Cegarra & Benoît Valéry. All rights reserved.
 # Institut National Universitaire Champollion (Albi, France).
 # License : CeCILL, version 2.1 (see the LICENSE file)
+from pathlib import Path
 from pyglet import font
 from core.constants import PATHS as P
 import configparser
+from load.loader import resource_path
 
 def get_session_numbers():
     try:
@@ -42,7 +44,7 @@ def find_the_last_session_number():
 def get_conf_value(section, key, val_type=None):
 
     # Read the configuration file
-    config_path = P['PLUGINS'].parent.joinpath('config.ini')
+    config_path = P['PLUGINS'].parent.joinpath(resource_path(Path("assets", "config.ini")))
     config = configparser.ConfigParser()
     config.read(config_path)
 

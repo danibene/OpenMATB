@@ -1,0 +1,46 @@
+<title>NASA-TLX
+Mental demand;How much mental and perceptual activity was required (e.g., thinking, deciding, calculating, remembering, looking, searching, etc.)? Was the task easy or demanding, simple or complex, exacting or forgiving?;Low/High;0/10/5
+Physical demand;How much physical activity was required (e.g., pushing, pulling, turning, controlling, activating, etc.)? Was the task easy or demanding, slow or brisk, slack or strenuous, restful or laborious?;Low/High;0/10/5
+Time pressure;How much time pressure did you feel due to the rate or pace at which the tasks or task elements occurred? Was the pace slow and leisurely or rapid and frantic?;Low/High;0/10/5
+Performance;How successful do you think you were in accomplishing the goals of the task set by the experimenter (or yourself)? How satisfied were you with your performance in accomplishing these goals?;Good/Poor;0/10/5
+Effort;How hard did you have to work (mentally or physically) to accomplish your level of performance?;Low/High;0/10/5
+Frustration;How insecure, discouraged, irritated, stressed and annoyed versus secure, gratified, content, relaxed and complacent did you feel during the task?;Low/High;0/10/5
+<newpage>
+<title>VAS-Stress
+Stress;How would you describe your level of stress right now?;No stress/Worst stress possible;0/10/5
+<newpage>
+<title>SSSQ-A
+Q1;I feel dissatisfied.;Strongly disagree/Strongly agree;1/5/3
+Q2;I feel alert.;Strongly disagree/Strongly agree;1/5/3
+Q3;I feel depressed.;Strongly disagree/Strongly agree;1/5/3
+Q4;I feel sad.;Strongly disagree/Strongly agree;1/5/3
+Q5;I feel active.;Strongly disagree/Strongly agree;1/5/3
+<newpage>
+<title>SSSQ-B
+Q6;I feel impatient.;Strongly disagree/Strongly agree;1/5/3
+Q7;I feel annoyed.;Strongly disagree/Strongly agree;1/5/3
+Q8;I feel angry.;Strongly disagree/Strongly agree;1/5/3
+Q9;I feel irritated.;Strongly disagree/Strongly agree;1/5/3
+Q10;I feel grouchy.;Strongly disagree/Strongly agree;1/5/3
+<newpage>
+<title>SSSQ-C
+Q11;I am committed to attaining my performance goals.;Strongly disagree/Strongly agree;1/5/3
+Q12;I want to succeed on the task.;Strongly disagree/Strongly agree;1/5/3
+Q13;I am motivated to do the task.;Strongly disagree/Strongly agree;1/5/3
+Q14;I’m trying to figure myself out.;Strongly disagree/Strongly agree;1/5/3
+<newpage>
+<title>SSSQ-D
+Q15;I’m reflecting about myself.;Strongly disagree/Strongly agree;1/5/3
+Q16;I’m daydreaming about myself.;Strongly disagree/Strongly agree;1/5/3
+Q17;I feel confident about my abilities.;Strongly disagree/Strongly agree;1/5/3
+Q18;I feel self-conscious.;Strongly disagree/Strongly agree;1/5/3
+<newpage>
+<title>SSSQ-E
+Q19;I am worried about what other people think of me.;Strongly disagree/Strongly agree;1/5/3
+Q20;I feel concerned about the impression I am making.;Strongly disagree/Strongly agree;1/5/3
+Q21;I expect to perform proficiently on this task.;Strongly disagree/Strongly agree;1/5/3
+Q22;Generally, I feel in control of things.;Strongly disagree/Strongly agree;1/5/3
+<newpage>
+<title>SSSQ-F
+Q23;I thought about how others have done on this task.;Strongly disagree/Strongly agree;1/5/3
+Q24;I thought about how I would feel if I were told how I performed.;Strongly disagree/Strongly agree;1/5/3
