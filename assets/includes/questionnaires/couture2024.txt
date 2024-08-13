@@ -1,6 +1,6 @@
 ﻿# Traduction française du NASA-TLX. Cegarra & Morgado (2009)
 <title>Fatigue et Stress
-Fatigue;Sur une échelle de 1 à 10, quel est votre niveau de fatigue?;Extrêmement alerte/Extrêmement endormi, ne peut rester éveillé;0/10/5
+Fatigue;Sur une échelle de 1 à 10, quel est votre niveau de fatigue?;Extrêmement alerte/Extrêmement endormi;0/10/5
 Stress;How would you describe your level of stress right now?;No stress/Worst stress possible;0/10/5
 <newpage>
 <title>NASA-TLX
