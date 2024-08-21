@@ -1,7 +1,7 @@
 ﻿# Traduction française du NASA-TLX. Cegarra & Morgado (2009)
 <title>Fatigue et Stress
 Fatigue;Sur une échelle de 1 à 10, quel est votre niveau de fatigue?;Extrêmement alerte/Extrêmement endormi;0/10/5
-Stress;How would you describe your level of stress right now?;No stress/Worst stress possible;0/10/5
+Stress;Sur une échelle de 1 à 10, quel est votre niveau de stress?;Aucun stress/Pire stress possible;0/10/5
 <newpage>
 <title>NASA-TLX
 Exigence mentale;Dans quelle mesure des opérations mentales et perceptives ont-elles été requises (par ex.: penser, décider, calculer, se rappeler, regarder, chercher, etc.) ? Ont-elles conduit à une tâche plutôt facile ou difficile, simple ou complexe, abordable ou exigeante ?;Faible/Forte;0/100/50
