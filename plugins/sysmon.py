@@ -58,21 +58,21 @@ class Sysmon(AbstractPlugin):
         self.moving_seed = 1                # Useful for pseudorandom generation of
                                             # multiple values at once (arrows move)
 
-        new_par = dict(alerttimeout=10000, automaticsolver=True, automaticsolverdelay=2000,
+        new_par = dict(alerttimeout=10000, automaticsolver=False, automaticsolverdelay=2000,
                        displayautomationstate=True, allowanykey=False, feedbackduration=1500,
 
                        feedbacks=dict(positive=dict(active=True, color=C['GREEN']),
                                       negative=dict(active=True, color=C['RED'])),
 
                        lights=dict([('1', dict(name='F5', failure=False, default='on',
-                                     oncolor=C['GREEN'], key='T', on=True)),
+                                     oncolor=C['GREEN'], key='Q', on=True)),
                                     ('2', dict(name='F6', failure=False, default='off',
-                                     oncolor=C['RED'], key='Y', on=False))]),
+                                     oncolor=C['RED'], key='W', on=False))]),
 
-                       scales=dict([('1', dict(name='F1', failure=False, side=0, key='Q')),
-                                    ('2', dict(name='F2', failure=False, side=0, key='W')),
-                                    ('3', dict(name='F3', failure=False, side=0, key='E')),
-                                    ('4', dict(name='F4', failure=False, side=0, key='R'))])
+                       scales=dict([('1', dict(name='F1', failure=False, side=0, key='E')),
+                                    ('2', dict(name='F2', failure=False, side=0, key='R')),
+                                    ('3', dict(name='F3', failure=False, side=0, key='T')),
+                                    ('4', dict(name='F4', failure=False, side=0, key='Y'))])
                        )
 
         self.parameters.update(new_par)
