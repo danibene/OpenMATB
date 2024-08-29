@@ -54,7 +54,7 @@ class Sysmon(AbstractPlugin):
             'scales-4-onfailure': validation.is_boolean}
 
 
-        self.keys = {'F1', 'F2', 'F3', 'F4', 'F5', 'F6'}
+        self.keys = {'Q', 'W', 'E', 'R', 'T', 'Y'}
         self.moving_seed = 1                # Useful for pseudorandom generation of
                                             # multiple values at once (arrows move)
 
@@ -65,14 +65,14 @@ class Sysmon(AbstractPlugin):
                                       negative=dict(active=True, color=C['RED'])),
 
                        lights=dict([('1', dict(name='F5', failure=False, default='on',
-                                     oncolor=C['GREEN'], key='F5', on=True)),
+                                     oncolor=C['GREEN'], key='T', on=True)),
                                     ('2', dict(name='F6', failure=False, default='off',
-                                     oncolor=C['RED'], key='F6', on=False))]),
+                                     oncolor=C['RED'], key='Y', on=False))]),
 
-                       scales=dict([('1', dict(name='F1', failure=False, side=0, key='F1')),
-                                    ('2', dict(name='F2', failure=False, side=0, key='F2')),
-                                    ('3', dict(name='F3', failure=False, side=0, key='F3')),
-                                    ('4', dict(name='F4', failure=False, side=0, key='F4'))])
+                       scales=dict([('1', dict(name='F1', failure=False, side=0, key='Q')),
+                                    ('2', dict(name='F2', failure=False, side=0, key='W')),
+                                    ('3', dict(name='F3', failure=False, side=0, key='E')),
+                                    ('4', dict(name='F4', failure=False, side=0, key='R'))])
                        )
 
         self.parameters.update(new_par)
