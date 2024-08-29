@@ -1,0 +1,7 @@
+<h1>Gestion des ressources - Événements - Code de couleur et pannes</h1>
+
+<p>Lorsque la pompe est de couleur blanche, le transfert entre les réservoirs est inactif. </p>
+<p>Lorsque la pompe est de couleur verte, le transfert entre les réservoir est actif. </p>
+
+<p>Des pompes peuvent aussi tomber en panne.</p>
+<p>Lorsque le transfert est défectueux, la pompe prendra la couleur rouge.</p>

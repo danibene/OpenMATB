@@ -1,0 +1,3 @@
+<h1>Tâche surveillance - Actions - F1 F2 F3 F4</h1>
+
+<p>Dans la tâche de surveillance, un pointeur se déplace autour du centre de quatre échelles. Lorsque le pointeur se rend à l'extrémité d'une échelle, vous devez intervenir en appuyant sur la touche correspondante à l'échelle sur le clavier.</p>
