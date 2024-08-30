@@ -1,0 +1,36 @@
+<h1>Présentation des tâches</h1>
+
+<p>Dans la tâche de gestion des ressources, le but est de limiter la fuite des deux réservoirs principaux (A et B) en utilisant un jeu de réservoirs de secours et de pompes, dont chacune a une puissance particulière.</p>
+
+<p>La tâche du participant est d'allumer/éteindre les pompes numérotées pour faire se rapprocher, du mieux que possible, les réservoirs A et B de leurs niveaux normaux (2500 unités).</p>
+
+<p>Pour allumer/éteindre une pompe, vous appuyez sur le numéro de la pompe au clavier. Des pompes peuvent parfois tomber en panne.</p>
+<img src=openmatb.png>
+
+<newpage>
+<h1>Gestion des ressources - Rythme d'écoulement et capacité des réservoirs</h1>
+
+<p>Dans la tâche de gestion des ressources, le carburant dans les deux réservoirs principaux (A et B) s'écoule et doit être maintenu à une hauteur dans les limites des bandes noires sur les deux côtés des réservoirs</p>
+
+<p>Les réservoirs C et D ont une capacité maximale de 2000 unité de carburant. </p> 
+<p>Les réservoirs E et F ont une capacité de carburant illimitée, ainsi ils ne peuvent jamais être vides. </p>
+
+
+<newpage>
+<h1>Gestion des ressources - Système de pompes</h1>
+
+<p>Pour transférer du carburant des réservoirs de secours aux réservoir principaux, vous devez allumer/éteindre les pompes 1 à 8 numérotées à l'aide des touches 1-8 sur le clavier. </p>
+
+<p>Chaque pompe a son propre rythme de transfert de carburant.</p>
+<p>Lorsqu'une pompe est activée, le rythme du transfert de carburant est indiqué dans la section "État des pompes" à droite.</p>
+
+
+<newpage>
+<h1>Gestion des ressources - Événements - Code de couleur et pannes</h1>
+
+<p>Lorsque la pompe est de couleur blanche, le transfert entre les réservoirs est inactif. </p>
+<p>Lorsque la pompe est de couleur verte, le transfert entre les réservoir est actif. </p>
+
+<p>Des pompes peuvent aussi tomber en panne.</p>
+<p>Lorsque le transfert est défectueux, la pompe prendra la couleur rouge.</p>
+

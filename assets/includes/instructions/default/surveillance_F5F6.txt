@@ -1,5 +1,0 @@
-<h1>Tâche surveillance - Actions - F5 et F6</h1>
-
-<p>Dans la tâche de surveillance, la jauge F5 est allumée. Lorsqu'elle s'éteint, vous devez intervenir en appuyant sur la touche F5 du clavier.</p>
-
-<p>De plus, la jauge F6 doit rester éteinte. Lorsqu'elle s'allume, vous devez appuyer sur la touche F6 du clavier. </p>

@@ -1,0 +1,12 @@
+<h1>Tâche surveillance - Lumières F5 et F6</h1>
+
+<p>Dans la tâche de surveillance, la lumière F5 est allumée en vert. Lorsqu'elle s'éteint, vous devez intervenir en appuyant sur la touche Q du clavier.</p>
+
+<p>La lumière F6 doit rester éteinte. Lorsqu'elle s'allume, vous devez appuyer sur la touche W du clavier. </p>
+<img src=openmatb.png>
+
+<newpage>
+<h1>Tâche surveillance - Échelles F1 F2 F3 F4</h1>
+
+<p>Dans la tâche de surveillance, un pointeur se déplace autour du centre de quatre échelles. Lorsque le pointeur se rend à l'extrémité d'une échelle, vous devez intervenir en appuyant sur les touches E, R, T et Y du clavier pour les échelles F1, F2, F3 et F4 respectivement.</p>
+<img src=openmatb.png>

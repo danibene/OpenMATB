@@ -1,0 +1,25 @@
+<h1>Présentation des tâches</h1>
+
+<p>Dans la tâche de communication, il s'agit pour le participant de répondre à des instructions sonores quant aux fréquences de ses radios. Certains messages s'adressent à lui (son indicatif), mais il doit ignorer les autres messages (autre indicatif).</p>
+<img src=openmatb.png>
+
+<newpage>
+<h1>Communications - Événements - Identifiant personnel</h1>
+
+<p>Dans la tâche de communication, les messages qui s'adressent à vous sont ceux qui commencent par votre identifiant : XXXX. </p>
+<img src=openmatb.png>
+
+<newpage>
+<h1>Communications - Événements - Autres messages</h1>
+
+<p>Dans la tâche de communication, les messages qui commencent par d'autres identifiant que le vôtre doivent être ignorés. </p>
+<img src=openmatb.png>
+
+<newpage>
+<h1>Communications - Actions - Identifiant personnel</h1>
+
+<p>Les instructions sont sous ce format : {Identifiant}, {identifiant}, mettre votre... à telle radio, telle fréquence.</p>
+
+<p>Vous devez utiliser les quatre flèches du clavier pour cette tâche.</p>
+<p>Pour changer de radio, appuyez sur les flèches qui pointent vers le haut ou vers le bas.</p>
+<p>Pour changer de fréquence, appuyez sur les flèches qui pointent vers la gauche pour diminuer la fréquence et la flèche de droite pour augmenter la fréquence.</p>

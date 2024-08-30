@@ -35,12 +35,12 @@ from plugins import *
 EVENTS_REFRACTORY_DURATION = 1 # Delay before the next event is allowed (in seconds)
 DIFFICULTY_MIN = 0.20
 DIFFICULTY_MAX = 0.80
-DIFFICULTY_STEP_NUMBER = 5
+DIFFICULTY_STEP_NUMBER = 4
 DIFFICULTY_STEP = (DIFFICULTY_MAX - DIFFICULTY_MIN) / (DIFFICULTY_STEP_NUMBER - 1)
-STEP_DURATION_SEC = 60
-COMMUNICATIONS_TARGET_RATIO = 0.7  # Proportion of target communications
+STEP_DURATION_SEC = 30
+COMMUNICATIONS_TARGET_RATIO = 1  # Proportion of target communications
 AVERAGE_AUDITORY_PROMPT_DURATION = 13
-SCENARIO_NAME = 'diff2080_commTRatio70_5min_sysMANU'
+SCENARIO_NAME = 'practice_onlyTarget(comm)'
 
 # Specify a scenario that should be added at the beginning
 ADD_SCENARIO_PATH = PATHS['SCENARIOS'].joinpath('custom_generator.txt')
