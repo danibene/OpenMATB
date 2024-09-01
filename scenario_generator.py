@@ -15,6 +15,8 @@ from datetime import datetime
 config = configparser.ConfigParser()
 config.read("config.ini")
 
+
+
 # Read and install the specified language iso
 # The LOCALE_PATH constant can't be set into constants.py because
 # the latter must be translated itself
@@ -22,7 +24,6 @@ LOCALE_PATH = Path('.', 'locales')
 language_iso = config['Openmatb']['language']
 language = gettext.translation('openmatb', LOCALE_PATH, [language_iso])
 language.install()
-
 
 # Imports #
 from core.scenario import Event
@@ -33,14 +34,14 @@ from plugins import *
 
 # Constants #
 EVENTS_REFRACTORY_DURATION = 1 # Delay before the next event is allowed (in seconds)
-DIFFICULTY_MIN = 0.20
-DIFFICULTY_MAX = 0.50
+DIFFICULTY_MIN = 0.50
+DIFFICULTY_MAX = 0.80
 DIFFICULTY_STEP_NUMBER = 5
 DIFFICULTY_STEP = (DIFFICULTY_MAX - DIFFICULTY_MIN) / (DIFFICULTY_STEP_NUMBER - 1)
 STEP_DURATION_SEC = 60
 COMMUNICATIONS_TARGET_RATIO = 0.5  # Proportion of target communications
 AVERAGE_AUDITORY_PROMPT_DURATION = 13
-SCENARIO_NAME = 'diff2050_5min_practice_low_50distrComm'
+SCENARIO_NAME = 'diff5080_5min_practice_high_50distrComm'
 
 # Specify a scenario that should be added at the beginning
 ADD_SCENARIO_PATH = PATHS['SCENARIOS'].joinpath('custom_generator.txt')
