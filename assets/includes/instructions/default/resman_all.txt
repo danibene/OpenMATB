@@ -5,7 +5,7 @@
 <p>La tâche du participant est d'allumer/éteindre les pompes numérotées pour faire se rapprocher, du mieux que possible, les réservoirs A et B de leurs niveaux normaux (2500 unités).</p>
 
 <p>Pour allumer/éteindre une pompe, vous appuyez sur le numéro de la pompe au clavier. Des pompes peuvent parfois tomber en panne.</p>
-<img src=openmatb.png>
+<img src=resman.png>
 
 <newpage>
 <h1>Gestion des ressources - Rythme d'écoulement et capacité des réservoirs</h1>
@@ -15,6 +15,7 @@
 <p>Les réservoirs C et D ont une capacité maximale de 2000 unité de carburant. </p> 
 <p>Les réservoirs E et F ont une capacité de carburant illimitée, ainsi ils ne peuvent jamais être vides. </p>
 
+<img src=resman.png>
 
 <newpage>
 <h1>Gestion des ressources - Système de pompes</h1>
@@ -23,6 +24,7 @@
 
 <p>Chaque pompe a son propre rythme de transfert de carburant.</p>
 <p>Lorsqu'une pompe est activée, le rythme du transfert de carburant est indiqué dans la section "État des pompes" à droite.</p>
+<img src=resman.png>
 
 
 <newpage>
@@ -34,3 +36,4 @@
 <p>Des pompes peuvent aussi tomber en panne.</p>
 <p>Lorsque le transfert est défectueux, la pompe prendra la couleur rouge.</p>
 
+<img src=resman.png>
