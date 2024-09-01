@@ -80,6 +80,9 @@ class Scenario:
 
         if contents is None:
             scenario_path = P['SCENARIOS'].joinpath(get_conf_value('Openmatb', 'scenario_path'))
+
+            print(f"Chemin du fichier de scénario: {scenario_path}")
+
             if scenario_path.exists():
                 contents = open(scenario_path, 'r').readlines()
                 logger.log_manual_entry(scenario_path, key='scenario_path')
