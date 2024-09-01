@@ -160,8 +160,7 @@ def add_scenario_phase(scenario_lines, task_difficulty_tuples, start_sec):
                 and plugin_name not in [p for (p, d) in task_difficulty_tuples]):
             scenario_lines.append(Event(start_line, start_sec, plugin_name, 'pause'))
             scenario_lines.append(Event(start_line, start_sec, plugin_name, 'hide'))
-            plugins['tracking', 'communications', 'resman'].pause()
-            plugins['tracking', 'communications', 'resman'].hide()
+          
 
     # If the desired plugin is not started or inactive, add the relevant commands
     for (plugin_name, difficulty) in task_difficulty_tuples:
