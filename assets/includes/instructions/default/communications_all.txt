@@ -1,19 +1,19 @@
 <h1>Présentation des tâches</h1>
 
-<p>Dans la tâche de communication, il s'agit pour le participant de répondre à des instructions sonores quant aux fréquences de ses radios. Certains messages s'adressent à lui (son indicatif), mais il doit ignorer les autres messages (autre indicatif).</p>
-<img src=openmatb.png>
+<p>Dans la tâche de communication, le but est de rester attentif pour répondre aux appels qui commencent par votre identifiant et d'ignorer les autres appels des instructions sonores quant aux fréquences de ses radios. Certains messages s'adressent à lui (son indicatif), mais il doit ignorer les autres messages (autre indicatif).</p>
+<img src=communications.png>
 
 <newpage>
 <h1>Communications - Événements - Identifiant personnel</h1>
 
 <p>Dans la tâche de communication, les messages qui s'adressent à vous sont ceux qui commencent par votre identifiant : XXXX. </p>
-<img src=openmatb.png>
+<img src=communications.png>
 
 <newpage>
 <h1>Communications - Événements - Autres messages</h1>
 
 <p>Dans la tâche de communication, les messages qui commencent par d'autres identifiant que le vôtre doivent être ignorés. </p>
-<img src=openmatb.png>
+<img src=communications.png>
 
 <newpage>
 <h1>Communications - Actions - Identifiant personnel</h1>
