@@ -10,6 +10,13 @@
 
 # 2. Start appropriate tasks
 0:00:00;sysmon;start
+# Start and hide task that are not used in the presentation
+0:00:00;resman;start
+0:00:00;track;start
+0:00:00;communications;start
+0:00:00;resman;hide
+0:00:00;track;hide
+0:00:00;communications;hide
 
 # 3. Set scenario events
 0:00:00;instructions;filename;surveillance_all.txt
@@ -28,6 +35,10 @@
 
 # 4. End tasks
 0:00:15;sysmon;stop
+0:00:15;communications;stop
+0:00:15;resman;stop
+0:00:15;track;stop
+
  
 
 
