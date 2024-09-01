@@ -1,0 +1,32 @@
+
+
+
+
+
+
+# Starter les tâches
+0:00:00;track;start
+0:00:00;track;automaticsolver;True
+0:00:00;sysmon;start
+0:00:00;communications;start
+0:00:00;resman;start
+
+0:00:00;instructions;filename;welcome_screen.txt
+0:00:00;instructions;start
+
+# 30 secondes de présentation des 3 tâches simultanées
+0:00:01;sysmon;lights-2-failure;True
+0:00:15;sysmon;lights-1-failure;True
+0:00:08;sysmon;scales-3-failure;True
+0:00:25;sysmon;scales-1-failure;True
+0:00:05;communications;radioprompt;own
+0:00:20;communications;radioprompt;other
+0:00:00;resman;tank-a-lossperminute;760
+0:00:00;resman;tank-b-lossperminute;760
+
+ 
+
+
+
+
+

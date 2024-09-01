@@ -1,4 +1,8 @@
-<h1>Présentation du OpenMATB
-<p>OpenMATB est une simulation d'environnement multitâches, </p>
+<h1>Présentation de OpenMATB</h1>
+<p>OpenMATB est une simulation d'environnement multitâches dans lequel vous êtes invité à prendre le rôle d'un pilote d'avion qui doit jongler entre différentes tâches.</p>
+<p>Dans le cadre de cette simulation, vous serez invité à effectuer trois tâches simultanément : la tâche de surveillance, la tâche de communication et la tâche de gestion des ressources</p>
 
-<p>Parce qu'il exige des participants de contrôler plusieurs tâches simultanément, ce logiciel permet une compréhension fine des processus mentaux impliqués dans la gestion des situations complexes et dynamiques.</p>
+<img src=capture.png>
+
+<p>Appuyez sur espace pour passer à la page suivante</p>
+<newpage>
