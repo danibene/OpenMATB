@@ -1,25 +1,19 @@
-<h1>Présentation des tâches</h1>
+<h1>Tâche de communication</h1>
 
-<p>Dans la tâche de communication, le but est de rester attentif pour répondre aux appels qui commencent par votre identifiant et d'ignorer les autres appels des instructions sonores quant aux fréquences de ses radios. Certains messages s'adressent à lui (son indicatif), mais il doit ignorer les autres messages (autre indicatif).</p>
-<img src=communications.png>
-
-<newpage>
-<h1>Communications - Événements - Identifiant personnel</h1>
-
-<p>Dans la tâche de communication, les messages qui s'adressent à vous sont ceux qui commencent par votre identifiant : XXXX. </p>
-<img src=communications.png>
+<p> La tâche de communication est une tâche auditive où vous devez écouter les appels provenant de la tour de contrôle pour régler quatre fréquences radio </p>
 
 <newpage>
-<h1>Communications - Événements - Autres messages</h1>
+<h1>Identifiant d'appel personnel</h1>
 
-<p>Dans la tâche de communication, les messages qui commencent par d'autres identifiant que le vôtre doivent être ignorés. </p>
-<img src=communications.png>
+<p>Dans la tâche de communication, tous les messages transmis par la tour de contrôle commencent par nommer l'identifiant concerné par l'appel.</p>
+<p>Vous devez seulement répondre aux messages qui commencent par votre identifiant personnel, lequel est inscrit au-dessus des postes radio à régler. </p>
+#<img src=communications.png>
 
 <newpage>
-<h1>Communications - Actions - Identifiant personnel</h1>
+<h1>Communications - Format des messages et des réponses</h1>
 
-<p>Les instructions sont sous ce format : {Identifiant}, {identifiant}, mettre votre... à telle radio, telle fréquence.</p>
+<p>Par exemple, pour l'identifiant ABC12, le message serait : ABC12, ABC12, ouvrez votre radio NAV1 à la fréquence 111.23.</p>
 
 <p>Vous devez utiliser les quatre flèches du clavier pour cette tâche.</p>
 <p>Pour changer de radio, appuyez sur les flèches qui pointent vers le haut ou vers le bas.</p>
-<p>Pour changer de fréquence, appuyez sur les flèches qui pointent vers la gauche pour diminuer la fréquence et la flèche de droite pour augmenter la fréquence.</p>
+<p>Pour changer de fréquence, appuyez  sur les flèches qui pointent vers la gauche pour diminuer la fréquence et la flèche de droite pour augmenter la fréquence.</p>

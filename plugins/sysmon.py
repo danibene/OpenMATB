@@ -64,15 +64,15 @@ class Sysmon(AbstractPlugin):
                        feedbacks=dict(positive=dict(active=True, color=C['GREEN']),
                                       negative=dict(active=True, color=C['RED'])),
 
-                       lights=dict([('1', dict(name='F5', failure=False, default='on',
-                                     oncolor=C['GREEN'], key='Q', on=True)),
-                                    ('2', dict(name='F6', failure=False, default='off',
-                                     oncolor=C['RED'], key='W', on=False))]),
+                       lights=dict([('1', dict(name='Z', failure=False, default='on',
+                                     oncolor=C['GREEN'], key='Z', on=True)),
+                                    ('2', dict(name='X', failure=False, default='off',
+                                     oncolor=C['RED'], key='X', on=False))]),
 
-                       scales=dict([('1', dict(name='F1', failure=False, side=0, key='E')),
-                                    ('2', dict(name='F2', failure=False, side=0, key='R')),
-                                    ('3', dict(name='F3', failure=False, side=0, key='T')),
-                                    ('4', dict(name='F4', failure=False, side=0, key='Y'))])
+                       scales=dict([('1', dict(name='C', failure=False, side=0, key='C')),
+                                    ('2', dict(name='V', failure=False, side=0, key='V')),
+                                    ('3', dict(name='B', failure=False, side=0, key='B')),
+                                    ('4', dict(name='N', failure=False, side=0, key='N'))])
                        )
 
         self.parameters.update(new_par)

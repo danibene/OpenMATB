@@ -18,7 +18,7 @@
 0:00:00;track;hide
 0:00:00;communications;hide
 
-# 3. Set scenario events
+
 0:00:00;instructions;filename;welcome_screen.txt
 0:00:00;instructions;start
 
@@ -30,6 +30,9 @@
 0:00:13;sysmon;scales-1-failure;True
 
 # 3.b. Resources management events
+0:00:00;resman;tank-a-lossperminute;600
+0:00:00;resman;tank-b-lossperminute;600
+
 # 3.c. Tracking events
 # 3.d. Communications events
 

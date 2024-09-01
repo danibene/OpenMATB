@@ -1,24 +1,15 @@
-<h1>Présentation de OpenMATB<h1>
-<p>OpenMATB est une simulation d'environnement multitâches dans lequel vous êtes invité à prendre le rôle d'un pilote d'avion qui doit jongler entre différentes tâches.</p>
-<p>Dans le cadre de cette simulation, vous serez invité à effectuer trois tâches simultanément : la tâche de surveillance, la tâche de communication et la tâche de gestion des ressources</p>
+<h1>Présentation de la simulation<h1>
+<p>Bienvenue! Vous êtes sur le point de prendre part à une simulation dans laquelle vous devrez prendre le rôle d'un pilote d'avion qui doit gérer plusiques tâches en même temps.</p>
 
-<img src=capture.png>
+<p>Vous devrez faire de votre mieux pour partager votre attention entre les tâches une tâche de surveillance du système, une tâche de communication avec la tour de contrôle et une tâche de gestion des ressources de carburant.</p>
 
-<p>Tout l'enjeu pour le participant consiste à parvenir à réaliser l'ensemble de ces tâches simultanément.</p>
+# <img src=capture.png>
 
-<newpage>
-<h1>Tâche surveillance - Lumières</h1>
+<p>L'enjeu consiste à parvenir à réaliser l'ensemble de ces tâches simultanément.</p>
 
-<img src=sysmon.png>
-
-<p>Dans la tâche de surveillance, vous devez surveiller l'état de deux lumières (Z et X) et de quatre échelles (C, V, B et N). </p>
-<p>Lorsque tout fonctionne, la lumière Z est allumée verte et la lumière X est éteinte (grise). Si la lumière Z s'éteint, vous devez appuyer sur la touche Z. Si la lumière X s'allume, vous devez appuyer sur la touche X du clavier.</p>
-
-
+#<newpage>
+#<img src=capture.png>
+#<newpage>
 
 <newpage>
-<h1>Tâche surveillance - Échelles</h1>
-
-<img src=sysmon.png>
-
-<p>Les échelles C, V, B et N sont munies d'un pointeur qui se déplace autour de leur centre. Si le pointeur se retrouve à l'extrémité d'une échelle, le système est dysfonctionnel. Vous devez intervenir en appuyant sur la touche correspondante à l'échelle du clavier (C, V, B ou N).</p>
+<p>Appuyez sur espace pour voir un aperçu de l'interface.</p>
