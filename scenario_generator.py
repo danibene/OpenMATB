@@ -41,7 +41,7 @@ DIFFICULTY_STEP = (DIFFICULTY_MAX - DIFFICULTY_MIN) / (DIFFICULTY_STEP_NUMBER - 
 STEP_DURATION_SEC = 60
 COMMUNICATIONS_TARGET_RATIO = 0.5  # Proportion of target communications
 AVERAGE_AUDITORY_PROMPT_DURATION = 13
-SCENARIO_NAME = 'diff5080_5min_practice_high_50distrComm'
+SCENARIO_NAME = 'practice_sysmon_diff5080_5min_high'
 
 # Specify a scenario that should be added at the beginning
 ADD_SCENARIO_PATH = PATHS['SCENARIOS'].joinpath('custom_generator.txt')
@@ -160,6 +160,8 @@ def add_scenario_phase(scenario_lines, task_difficulty_tuples, start_sec):
                 and plugin_name not in [p for (p, d) in task_difficulty_tuples]):
             scenario_lines.append(Event(start_line, start_sec, plugin_name, 'pause'))
             scenario_lines.append(Event(start_line, start_sec, plugin_name, 'hide'))
+            plugins['tracking', 'communications', 'resman'].pause()
+            plugins['tracking', 'communications', 'resman'].hide()
 
     # If the desired plugin is not started or inactive, add the relevant commands
     for (plugin_name, difficulty) in task_difficulty_tuples:
