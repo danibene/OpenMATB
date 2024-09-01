@@ -14,18 +14,16 @@
 0:00:00;resman;start
 0:00:00;track;start
 0:00:00;communications;start
+0:00:00;resman;pause
+0:00:00;track;pause
+0:00:00;communications;pause
 0:00:00;resman;hide
 0:00:00;track;hide
 0:00:00;communications;hide
 
-
-0:00:00;instructions;filename;welcome_screen.txt
-0:00:00;instructions;start
-
 # 3.a. System monitoring events
-0:00:00;sysmon;lights-1-failure;True
 0:00:02;sysmon;lights-1-failure;True
-0:00:010;sysmon;lights-2-failure;True
+0:00:10;sysmon;lights-2-failure;True
 0:00:07;sysmon;scales-3-failure;True
 0:00:13;sysmon;scales-1-failure;True
 

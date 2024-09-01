@@ -54,7 +54,7 @@ class Sysmon(AbstractPlugin):
             'scales-4-onfailure': validation.is_boolean}
 
 
-        self.keys = {'Q', 'W', 'E', 'R', 'T', 'Y'}
+        self.keys = {'Z', 'X', 'C', 'V', 'B', 'N'}
         self.moving_seed = 1                # Useful for pseudorandom generation of
                                             # multiple values at once (arrows move)
 

@@ -1,3 +1,14 @@
-<h1>Tâche surveillance - Actions - F1 F2 F3 F4</h1>
+<h1>Tâche surveillance - Lumières</h1>
 
-<p>Dans la tâche de surveillance, un pointeur se déplace autour du centre de quatre échelles. Lorsque le pointeur se rend à l'extrémité d'une échelle, vous devez intervenir en appuyant sur la touche correspondante à l'échelle sur le clavier.</p>
+# <img src=sysmon.png>
+
+<p>Dans la tâche de surveillance, vous devez surveiller l'état de deux lumières (Z et X) et de quatre échelles (C, V, B et N). </p>
+<p>Lorsque tout fonctionne, la lumière Z est allumée verte et la lumière X est éteinte (grise). Si la lumière Z s'éteint, vous devez appuyer sur la touche Z du clavier. Si la lumière X s'allume, vous devez appuyer sur la touche X du clavier.</p>
+
+
+<newpage>
+<h1>Tâche surveillance - Échelles</h1>
+
+#<img src=sysmon.png>
+
+<p>Les échelles C, V, B et N sont munies d'un pointeur qui se déplace autour de leur centre. Si le pointeur se retrouve à l'extrémité d'une échelle, le système est dysfonctionnel. Vous devez intervenir en appuyant sur la touche correspondante à l'échelle du clavier (C, V, B ou N).</p>
