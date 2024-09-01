@@ -1,8 +1,24 @@
-<h1>Présentation de OpenMATB</h1>
+<h1>Présentation de OpenMATB<h1>
 <p>OpenMATB est une simulation d'environnement multitâches dans lequel vous êtes invité à prendre le rôle d'un pilote d'avion qui doit jongler entre différentes tâches.</p>
 <p>Dans le cadre de cette simulation, vous serez invité à effectuer trois tâches simultanément : la tâche de surveillance, la tâche de communication et la tâche de gestion des ressources</p>
 
 <img src=capture.png>
 
-<p>Appuyez sur espace pour passer à la page suivante</p>
+<p>Tout l'enjeu pour le participant consiste à parvenir à réaliser l'ensemble de ces tâches simultanément.</p>
+
 <newpage>
+<h1>Tâche surveillance - Lumières</h1>
+
+<img src=sysmon.png>
+
+<p>Dans la tâche de surveillance, vous devez surveiller l'état de deux lumières (Z et X) et de quatre échelles (C, V, B et N). </p>
+<p>Lorsque tout fonctionne, la lumière Z est allumée verte et la lumière X est éteinte (grise). Si la lumière Z s'éteint, vous devez appuyer sur la touche Z. Si la lumière X s'allume, vous devez appuyer sur la touche X du clavier.</p>
+
+
+
+<newpage>
+<h1>Tâche surveillance - Échelles</h1>
+
+<img src=sysmon.png>
+
+<p>Les échelles C, V, B et N sont munies d'un pointeur qui se déplace autour de leur centre. Si le pointeur se retrouve à l'extrémité d'une échelle, le système est dysfonctionnel. Vous devez intervenir en appuyant sur la touche correspondante à l'échelle du clavier (C, V, B ou N).</p>

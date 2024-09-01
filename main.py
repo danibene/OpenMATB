@@ -3,7 +3,6 @@
 # Copyright 2023, by Julien Cegarra & Benoît Valéry. All rights reserved.
 # Institut National Universitaire Champollion (Albi, France).
 # License : CeCILL, version 2.1 (see the LICENSE file)
-
 import gettext, sys
 from pathlib import Path
 from load.loader import resource_path
@@ -12,6 +11,7 @@ from load.loader import resource_path
 # The LOCALE_PATH constant can't be set into constants.py because
 # the latter must be translated itself
 LOCALE_PATH = resource_path(Path('assets','locales'))
+
 
 # Only language is accessed manually from the config.ini to avoid circular imports
 # (i.e., utils needing translation needing utils and so on)

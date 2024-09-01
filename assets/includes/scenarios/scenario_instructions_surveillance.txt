@@ -19,7 +19,7 @@
 0:00:00;communications;hide
 
 # 3. Set scenario events
-0:00:00;instructions;filename;surveillance_all.txt
+0:00:00;instructions;filename;welcome_screen.txt
 0:00:00;instructions;start
 
 # 3.a. System monitoring events
@@ -34,10 +34,10 @@
 # 3.d. Communications events
 
 # 4. End tasks
-0:00:15;sysmon;stop
-0:00:15;communications;stop
-0:00:15;resman;stop
-0:00:15;track;stop
+0:01:15;sysmon;stop
+0:01:15;communications;stop
+0:01:15;resman;stop
+0:01:15;track;stop
 
  
 
