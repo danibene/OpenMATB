@@ -58,7 +58,7 @@ class Sysmon(AbstractPlugin):
         self.moving_seed = 1                # Useful for pseudorandom generation of
                                             # multiple values at once (arrows move)
 
-        new_par = dict(alerttimeout=10000, automaticsolver=False, automaticsolverdelay=2000,
+        new_par = dict(alerttimeout=10000, automaticsolver=False, automaticsolverdelay=1000,
                        displayautomationstate=True, allowanykey=False, feedbackduration=1500,
 
                        feedbacks=dict(positive=dict(active=True, color=C['GREEN']),
