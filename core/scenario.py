@@ -94,6 +94,14 @@ class Scenario:
         self.events = [Event.parse_from_string(line_n, line_str) for line_n, line_str
                        in enumerate(contents)
                        if len(line_str.strip()) > 0 and not line_str.startswith("#")]
+        print(f"Processing line {line_n}: {line_str}")  # Message de débogage
+        try:
+            time_str, plugin, *command = line_str.strip().split(cls.sep)
+        except ValueError as e:
+            print(f"Error processing line {line_n}: {line_str}")  # Message d'erreur
+            print(f"Exception: {e}")  # Affiche l'exception
+            raise
+        return cls(time_str, plugin, command)
 
         # Next load the scheduled plugins into the class, so we can check potential errors
         # But first, check that only available plugins are mentioned
