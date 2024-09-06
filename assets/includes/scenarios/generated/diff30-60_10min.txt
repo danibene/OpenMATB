@@ -17,7 +17,7 @@
 #0:00:00;sysmon;lights-1-name;OK
 #0:00:00;sysmon;lights-2-name;WARNING
 #0:00:00;sysmon;lights-2-on;False  # quel est l'état par défaut?
-#0:00:00;sysmon;lights-2-oncolor;blue  couleur de la lumière quand elle est allumée
+#0:00:00;sysmon;lights-2-oncolor;blue   #couleur de la lumière quand elle est allumée
     # feedback and automation parameters
 #0:00:00;sysmon;feedbacks-positive-active;False
 #0:00:00;sysmon;feedbacks-positive-color;green
@@ -40,7 +40,12 @@
 #0:00:00;communications;voiceidiom;french
 #0:00:00;communications;voicegender;female #male or female
 #0:00:00;communications;radioprompt;own #Use it to trigger either a target (own) or a distractor (other) prompt [own or other]. Initially empty. Will be emptied at the end of the prompt	
-#0:00:00;communications;
+#0:00:00;communications;maxresponsedelay;20000  #maximum response delay (ms)
+#0:00:00;communications;feedbacks-positive-active;False  #Is the positive feedback (correct response) enabled?	
+#0:00:00;communications;feedbacks-positive-color;green  #Color of the positive feedback if enabled	
+#0:00:00;communications;feedbacks-negative-active;False
+#0:00:00;communications;feedbacks-negative-color;red
+#0:00:00;communications;feedbackduration;1500   #Duration (ms) of the feedbacks when enabled	
 
 # resman parameters
     #tolerance area
