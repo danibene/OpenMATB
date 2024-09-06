@@ -34,14 +34,14 @@ from plugins import *
 
 # Constants #
 EVENTS_REFRACTORY_DURATION = 1 # Delay before the next event is allowed (in seconds)
-DIFFICULTY_MIN = 0.50
-DIFFICULTY_MAX = 1
+DIFFICULTY_MIN = 0.30
+DIFFICULTY_MAX = 0.30
 DIFFICULTY_STEP_NUMBER = 3
 DIFFICULTY_STEP = (DIFFICULTY_MAX - DIFFICULTY_MIN) / (DIFFICULTY_STEP_NUMBER - 1)
 STEP_DURATION_SEC = 60
 COMMUNICATIONS_TARGET_RATIO = 0.5  # Proportion of target communications
 AVERAGE_AUDITORY_PROMPT_DURATION = 13
-SCENARIO_NAME = 'practice_diff50100_3min'
+SCENARIO_NAME = 'practice_diff30_3min'
 
 # Specify a scenario that should be added at the beginning
 ADD_SCENARIO_PATH = PATHS['SCENARIOS'].joinpath('custom_generator.txt')
@@ -66,8 +66,8 @@ def part_duration_sec(duration_sec, part_left, duration_list=list()):
     part_left = max(2, part_left)
     allowed_max_duration = int(duration_sec/(part_left-1))
 
-    # ~ print(duration_sec, part_left, allowed_max_duration, duration_list)
-    # ~ print(MIN_PART_DURATION_SEC, duration_sec, part_left)
+    print(duration_sec, part_left, allowed_max_duration, duration_list)
+    print(MIN_PART_DURATION_SEC, duration_sec, part_left)
     n = randint(MIN_PART_DURATION_SEC, allowed_max_duration)
     return part_duration_sec(duration_sec - n, part_left-1, duration_list + [n])
 

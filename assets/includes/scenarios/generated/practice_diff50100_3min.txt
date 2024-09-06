@@ -30,6 +30,8 @@
 #0:00:00;resman;tank-a-lossperminute;600
 #0:00:00;resman;tank-b-lossperminute;600
 
+0:00:00;performance;start
+
 # Block n� 2. Technical load = 75.0 %
 #0:01:00;track;targetproportion;0.25
 
@@ -75,3 +77,4 @@
 0:03:00;communications;stop
 0:03:00;track;stop
 0:03:00;resman;stop
+0:03:00;performance;stop
