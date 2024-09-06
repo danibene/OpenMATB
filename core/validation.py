@@ -7,6 +7,7 @@
 # each scenario parameter value is accepted.
 
 from core.constants import COLORS as C, PATHS as P
+import re 
 
 def is_string(x):
     # Should always be True as we are reading parameters from a text file

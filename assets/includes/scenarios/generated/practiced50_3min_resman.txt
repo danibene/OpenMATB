@@ -3,7 +3,7 @@
 # Name: practice_diff50_3min
 # Date: 05/09/2024 20:47:00
 
-                                # Task parameters
+# Task parameters
 # Tracking parameters
 #0:00:00;track;automaticsolver;True
 
@@ -48,9 +48,10 @@
 
 # resman parameters
 #tolerance area PRACTICE 
-#0:00:00;resman;tolerancecoloroutside;red
+0:00:00;resman;tolerancecoloroutside;#FF0000
+
 #tank
-#0:00:00;resman;tank-a-level;2500
+#0:00:00;resman;tank-a-level;2300
 #0:00:00;resman;tank-a-max;4000 
 #0:00:00;resman;tank-a-target;2500
 #0:00:00;resman;tank-a-depletable;True
