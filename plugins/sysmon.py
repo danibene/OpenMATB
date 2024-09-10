@@ -54,25 +54,25 @@ class Sysmon(AbstractPlugin):
             'scales-4-onfailure': validation.is_boolean}
 
 
-        self.keys = {'Z', 'X', 'C', 'V', 'B', 'N'}
+        self.keys = {'A', 'S', 'Z', 'X', 'C', 'V'}
         self.moving_seed = 1                # Useful for pseudorandom generation of
                                             # multiple values at once (arrows move)
 
-        new_par = dict(alerttimeout=10000, automaticsolver=False, automaticsolverdelay=1000,
+        new_par = dict(alerttimeout=10000, automaticsolver=False, automaticsolverdelay=2000,
                        displayautomationstate=True, allowanykey=False, feedbackduration=1500,
 
-                       feedbacks=dict(positive=dict(active=True, color=C['GREEN']),
-                                      negative=dict(active=True, color=C['RED'])),
+                       feedbacks=dict(positive=dict(active=False, color=C['GREEN']),
+                                       negative=dict(active=False, color=C['RED'])),
 
-                       lights=dict([('1', dict(name='Z', failure=False, default='on',
-                                     oncolor=C['GREEN'], key='Z', on=True)),
-                                    ('2', dict(name='X', failure=False, default='off',
-                                     oncolor=C['RED'], key='X', on=False))]),
+                       lights=dict([('1', dict(name='OK', failure=False, default='on',
+                                     oncolor=C['GREEN'], key='A', on=True)),
+                                    ('2', dict(name='ALERTE', failure=False, default='off',
+                                     oncolor=C['RED'], key='S', on=False))]),
 
-                       scales=dict([('1', dict(name='C', failure=False, side=0, key='C')),
-                                    ('2', dict(name='V', failure=False, side=0, key='V')),
-                                    ('3', dict(name='B', failure=False, side=0, key='B')),
-                                    ('4', dict(name='N', failure=False, side=0, key='N'))])
+                       scales=dict([('1', dict(name='E1', failure=False, side=0, key='Z')),
+                                    ('2', dict(name='E2', failure=False, side=0, key='X')),
+                                    ('3', dict(name='E3', failure=False, side=0, key='C')),
+                                    ('4', dict(name='E4', failure=False, side=0, key='V'))])
                        )
 
         self.parameters.update(new_par)

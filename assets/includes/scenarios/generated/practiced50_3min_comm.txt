@@ -42,7 +42,7 @@
 #0:00:00;communications;maxresponsedelay;20000  #maximum response delay (ms)
 # practice parameters
 0:00:00;communications;feedbacks-positive-active;True
-0:00:00;communications;feedbacks-negative-active;True 	
+0:00:00;communications;feedbacks-negative-active;True
 #0:00:00;communications;feedbacks-positive-color;green  #Color of the positive feedback if enabled	
 #0:00:00;communications;feedbacks-negative-color;red
 #0:00:00;communications;feedbackduration;1500   #Duration (ms) of the feedbacks when enabled	
