@@ -154,7 +154,7 @@ def add_scenario_phase(scenario_lines, task_difficulty_tuples, start_sec):
     end_sec = start_sec + STEP_DURATION_SEC
 
     # If a plugin is active and not desired, pause and hide it
-    for plugin_name in ['sysmon', 'tracking', 'communications', 'resman']:
+    for plugin_name in ['sysmon', 'track', 'communications', 'resman']:
         task_state = get_task_current_state(scenario_lines, plugin_name)
         if (task_state in ['start', 'resume']
                 and plugin_name not in [p for (p, d) in task_difficulty_tuples]):
