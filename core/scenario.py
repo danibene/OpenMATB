@@ -80,6 +80,9 @@ class Scenario:
 
         if contents is None:
             scenario_path = P['SCENARIOS'].joinpath(get_conf_value('Openmatb', 'scenario_path'))
+
+            print(f"Chemin du fichier de scénario: {scenario_path}")
+
             if scenario_path.exists():
                 contents = open(scenario_path, 'r').readlines()
                 logger.log_manual_entry(scenario_path, key='scenario_path')
@@ -91,6 +94,7 @@ class Scenario:
         self.events = [Event.parse_from_string(line_n, line_str) for line_n, line_str
                        in enumerate(contents)
                        if len(line_str.strip()) > 0 and not line_str.startswith("#")]
+                  
 
         # Next load the scheduled plugins into the class, so we can check potential errors
         # But first, check that only available plugins are mentioned

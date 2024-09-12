@@ -1,0 +1,89 @@
+
+
+#2. Start appropriate tasks
+
+0:00:00;resman;start
+0:00:00;track;start
+0:00:00;sysmon;start
+0:00:00;communications;start
+0:00:00;performance;start
+
+#1.a. system monitoring parameters
+0:00:00;sysmon;automaticsolverdelay;4000
+0:00:00;sysmon;alerttimeout;10000
+
+0:00:00;track;automaticsolver;True
+
+#1.c. resman parameters
+0:00:00;resman;tank-a-lossperminute;240
+0:00:00;resman;tank-b-lossperminute;240
+
+
+#3.a. System monitoring events (8 system malfunctions; 75% automatic resolving)
+# Warning light onset during automatic solving is managed explicitly
+
+#non-overlap
+0:00:30;sysmon;scales-2-failure;up
+0:00:30;sysmon;automaticsolver;True
+0:00:30;sysmon;lights-2-on;True
+
+#OVERLAP (0:01:08 comm event)
+0:01:10;sysmon;scales-3-failure;down
+0:01:10;sysmon;automaticsolver;True
+0:01:10;sysmon;lights-2-on;True
+
+#non-overlap
+0:01:42;sysmon;scales-1-failure;up
+0:01:42;sysmon;automaticsolver;True
+0:01:42;sysmon;lights-2-on;True
+
+#non-overlap
+0:02:00;sysmon;scales-1-failure;up
+0:02:00;sysmon;automaticsolver;False
+0:02:00;sysmon;lights-2-on;True
+
+#OVERLAP (0:02:42 comm)
+0:02:47;sysmon;scales-2-failure;down
+0:02:47;sysmon;automaticsolver;True
+0:02:47;sysmon;lights-2-on;True
+
+#non overlap (0:03:02 comm)
+0:03:26;sysmon;scales-4-failure;down
+0:03:26;sysmon;automaticsolver;True
+0:03:26;sysmon;lights-2-on;True
+
+#OVERLAP (0:04:09 comm)
+0:04:10;sysmon;scales-2-failure;up
+0:04:10;sysmon;automaticsolver;False
+0:04:10;sysmon;lights-2-on;False
+
+#non overlap
+0:04:38;sysmon;scales-4-failure;down
+0:04:38;sysmon;automaticsolver;True
+0:04:38;sysmon;lights-2-on;True
+
+#3.b. Communications events (5 events, 60% overlap with sysmon, 2/3 overlap = distractor call)
+
+0:00:08;communications;radioprompt;own
+
+#overlap
+0:01:08;communications;radioprompt;other
+
+# overlap
+0:02:42;communications;radioprompt;own
+
+0:03:02;communications;radioprompt;own
+
+# overlap
+0:04:09;communications;radioprompt;other
+
+# 4. end tasks
+
+0:05:00;resman;stop
+0:05:00;track;stop
+0:05:00;sysmon;stop
+0:05:00;communications;stop
+0:05:00;performance;stop
+
+0:05:00;genericscales;filename;couture2024.txt
+0:05:00;genericscales;start

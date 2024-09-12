@@ -15,6 +15,8 @@ from datetime import datetime
 config = configparser.ConfigParser()
 config.read("config.ini")
 
+
+
 # Read and install the specified language iso
 # The LOCALE_PATH constant can't be set into constants.py because
 # the latter must be translated itself
@@ -22,7 +24,6 @@ LOCALE_PATH = Path('.', 'locales')
 language_iso = config['Openmatb']['language']
 language = gettext.translation('openmatb', LOCALE_PATH, [language_iso])
 language.install()
-
 
 # Imports #
 from core.scenario import Event
@@ -33,14 +34,14 @@ from plugins import *
 
 # Constants #
 EVENTS_REFRACTORY_DURATION = 1 # Delay before the next event is allowed (in seconds)
-DIFFICULTY_MIN = 0.05
-DIFFICULTY_MAX = 1
+DIFFICULTY_MIN = 0.20
+DIFFICULTY_MAX = 0.40
 DIFFICULTY_STEP_NUMBER = 10
 DIFFICULTY_STEP = (DIFFICULTY_MAX - DIFFICULTY_MIN) / (DIFFICULTY_STEP_NUMBER - 1)
 STEP_DURATION_SEC = 60
-COMMUNICATIONS_TARGET_RATIO = 0.50  # Proportion of target communications
-AVERAGE_AUDITORY_PROMPT_DURATION = 13
-SCENARIO_NAME = 'incapacitation'
+COMMUNICATIONS_TARGET_RATIO = 0.5  # Proportion of target communications
+AVERAGE_AUDITORY_PROMPT_DURATION = 10
+SCENARIO_NAME = 'diff20-40_10min'
 
 # Specify a scenario that should be added at the beginning
 ADD_SCENARIO_PATH = PATHS['SCENARIOS'].joinpath('custom_generator.txt')
@@ -65,8 +66,8 @@ def part_duration_sec(duration_sec, part_left, duration_list=list()):
     part_left = max(2, part_left)
     allowed_max_duration = int(duration_sec/(part_left-1))
 
-    # ~ print(duration_sec, part_left, allowed_max_duration, duration_list)
-    # ~ print(MIN_PART_DURATION_SEC, duration_sec, part_left)
+    print(duration_sec, part_left, allowed_max_duration, duration_list)
+    print(MIN_PART_DURATION_SEC, duration_sec, part_left)
     n = randint(MIN_PART_DURATION_SEC, allowed_max_duration)
     return part_duration_sec(duration_sec - n, part_left-1, duration_list + [n])
 
@@ -153,12 +154,13 @@ def add_scenario_phase(scenario_lines, task_difficulty_tuples, start_sec):
     end_sec = start_sec + STEP_DURATION_SEC
 
     # If a plugin is active and not desired, pause and hide it
-    for plugin_name in ['sysmon', 'tracking', 'communications', 'resman']:
+    for plugin_name in ['sysmon', 'track', 'communications', 'resman']:
         task_state = get_task_current_state(scenario_lines, plugin_name)
         if (task_state in ['start', 'resume']
                 and plugin_name not in [p for (p, d) in task_difficulty_tuples]):
             scenario_lines.append(Event(start_line, start_sec, plugin_name, 'pause'))
             scenario_lines.append(Event(start_line, start_sec, plugin_name, 'hide'))
+          
 
     # If the desired plugin is not started or inactive, add the relevant commands
     for (plugin_name, difficulty) in task_difficulty_tuples:
@@ -199,6 +201,7 @@ def add_scenario_phase(scenario_lines, task_difficulty_tuples, start_sec):
             difficulty_events_N = int((difficulty)/single_failure_ratio)
 
             events_N = min(max_events_N, difficulty_events_N)
+            
 
             # Locate light events
             # Retrieve light names

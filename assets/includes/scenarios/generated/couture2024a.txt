@@ -127,3 +127,6 @@
 0:10:00;resman;stop
 0:10:00;sysmon;stop
 0:10:00;track;stop
+
+0:10:00;genericscales;filename;couture2024.txt
+0:10:00;genericscales;start

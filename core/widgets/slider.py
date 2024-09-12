@@ -60,11 +60,11 @@ class Slider(AbstractWidget):
             self.vertex[name] = Label(getattr(self, f'label_{name}'), font_name=self.font_name,
                                       align='center', anchor_x='center',
                                       anchor_y='center', x=x, y=y, color=C['BLACK'],
-                                      group=G(self.draw_order), font_size=F['MEDIUM'])
+                                      group=G(self.draw_order), font_size=F['SMALL'])
         x, y = self.containers['value'].cx, self.containers['value'].cy
         self.vertex['value'] = Label(str(self.groove_value), align='center', anchor_x='center',
                                       anchor_y='center', x=x, y=y, color=C['BLACK'],
-                                      group=G(self.draw_order), font_size=F['MEDIUM'], 
+                                      group=G(self.draw_order), font_size=F['SMALL'], 
                                       font_name=self.font_name)
 
 

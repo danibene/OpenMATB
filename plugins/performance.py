@@ -21,7 +21,7 @@ class Performance(AbstractPlugin):
             'criticalcolor': validation.is_color}
 
         new_par = dict(levelmin=0, levelmax=100, ticknumber=5, criticallevel=20,
-                       shadowundercritical=True, defaultcolor=C['GREEN'], criticalcolor=C['RED'])
+                       shadowundercritical=False, defaultcolor=C['GREEN'], criticalcolor=C['RED'])
         self.parameters.update(new_par)
 
         self.current_level = int(self.parameters['levelmax'])

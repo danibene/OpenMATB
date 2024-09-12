@@ -23,7 +23,7 @@ class Scale(AbstractWidget):
         self.position = 5
 
         # Compute vertices
-        self.vertex['label'] = Label(label.upper(), font_size=F['MEDIUM'], x=self.container.cx, font_name=self.font_name,
+        self.vertex['label'] = Label(label.upper(), font_size=F['SMALL'], x=self.container.cx, font_name=self.font_name,
                                      y=self.container.b-20, anchor_x='center', anchor_y='center',
                                      color=C['BLACK'], batch=None, group=G(self.m_draw+1))
 
