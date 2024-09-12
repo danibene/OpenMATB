@@ -7,8 +7,8 @@
     # Tracking parameters
 0:00:00;track;automaticsolver;True
 
-    # Sysmon parameters
-    #lights and scale name and states
+# Sysmon parameters
+#lights and scale name and states
 #0:00:00;sysmon;scales-1-name;TEMP1
 #0:00:00;sysmon;scales-1-key;Z
 #0:00:00;sysmon;scales-2-name;PRES1
@@ -18,7 +18,7 @@
 #0:00:00;sysmon;lights-2-name;WARNING
 #0:00:00;sysmon;lights-2-on;False  # quel est l'état par défaut?
 #0:00:00;sysmon;lights-2-oncolor;blue   #couleur de la lumière quand elle est allumée
-    # feedback and automation parameters
+# feedback and automation parameters
 #0:00:00;sysmon;feedbacks-positive-active;False
 #0:00:00;sysmon;feedbacks-positive-color;green
 #0:00:00;sysmon;feedbacks-negative-active;False
@@ -48,17 +48,17 @@
 #0:00:00;communications;feedbackduration;1500   #Duration (ms) of the feedbacks when enabled	
 
 # resman parameters
-    #tolerance area
+#tolerance area
 #0:00:00;resman;toleranceradius;250   # Radius of the tolerance area (0=do not display tolerance area)	
 #0:00:00;resman;tolerancecolor;black   # Color of the tolerance area when volume is inside it	
 #0:00:00;resman;tolerancecoloroutside;black      # Color of the tolerance area when volume is outside it	
-    #tank
+#tank
 #0:00:00;resman;tank-a-level;2500   # Current level of this tank	
 #0:00:00;resman;tank-a-max;4000 
 #0:00:00;resman;tank-a-target;2500  #Target level of this tank	
 #0:00:00;resman;tank-a-depletable;True  # Is this tank depletable (False=infinite resource)
 #0:00:00;resman;tank-a-lossperminute;800
-    #pump
+#pump
 #0:00:00;resman;pumpcoloroff;white    #pumpcoloron ou #pumpcolorfailure aussi # Color of the pump when its state is off	
 #0:00:00;resman;pump-1-flow;800    #Pump debit per minute	
 #0:00:00;resman;pump-1-state;failure   # state can be ON, OFF or FAILURE
@@ -67,7 +67,7 @@
 
 
 
-                                # Start tasks and plugins 
+# Start tasks and plugins 
 
 0:00:00;track;start
 0:00:00;sysmon;start
@@ -78,7 +78,6 @@
 # Block n� 1. Technical load = 30.0 %
 
 # sysmon events
-
 0:00:06;sysmon;lights-2-failure;True
 0:00:02;sysmon;scales-3-failure;True
 
@@ -88,6 +87,7 @@
 # resman
 0:00:00;resman;tank-a-lossperminute;360
 0:00:00;resman;tank-b-lossperminute;360
+
 
 # Block n� 2. Technical load = 33.3 %
 

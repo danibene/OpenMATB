@@ -46,58 +46,74 @@
 # 3.a. System monitoring events (16 system malfunctions : example of a high-reliability block [87.5% of automatic resolving])
 # Warning light onset during automatic solving is managed explicitly
 
+# aucun overlap comm (0:00:08; + 10 prompt + 10 reponse = 0:00:28)
 0:00:30;sysmon;scales-2-failure;up
 0:00:30;sysmon;automaticsolver;True
 0:00:30;sysmon;lights-2-on;True
 
+# OVERLAP (0:01:08 comm event)
 0:01:10;sysmon;scales-3-failure;down
 0:01:10;sysmon;automaticsolver;True
 0:01:10;sysmon;lights-2-on;True
 
+# non-overlap
 0:01:42;sysmon;scales-1-failure;up
 0:01:42;sysmon;automaticsolver;True
 0:01:42;sysmon;lights-2-on;True
 
+# non-overlap
 0:02:00;sysmon;scales-1-failure;up
 0:02:00;sysmon;automaticsolver;True
 0:02:00;sysmon;lights-2-on;True
 
+# OVERLAP (0:02:42 comm)
 0:02:47;sysmon;scales-2-failure;down
 0:02:47;sysmon;automaticsolver;True
 0:02:47;sysmon;lights-2-on;True
 
+# non overlap (0:03:02 comm)
 0:03:26;sysmon;scales-4-failure;down
 0:03:26;sysmon;automaticsolver;True
 0:03:26;sysmon;lights-2-on;True
 
+# OVERLAP (0:04:09 comm)
 0:04:10;sysmon;scales-2-failure;up
 0:04:10;sysmon;automaticsolver;False
 0:04:10;sysmon;lights-2-on;False
 
+# non overlap
 0:04:38;sysmon;scales-4-failure;down
 0:04:38;sysmon;automaticsolver;True
 0:04:38;sysmon;lights-2-on;True
 
+## ending 5 min, 8 events (75% reliability)
+
+# OVERLAP (0:05:20 comm)
 0:05:25;sysmon;scales-1-failure;down
 0:05:25;sysmon;automaticsolver;True
 0:05:25;sysmon;lights-2-on;True
 
+# non-overlap
 0:06:12;sysmon;scales-2-failure;up
 0:06:12;sysmon;automaticsolver;False
 0:06:12;sysmon;lights-2-on;False
 
+# OVERLAP (0:06:47 comm)
 0:06:55;sysmon;scales-3-failure;up
 0:06:55;sysmon;automaticsolver;True
 0:06:55;sysmon;lights-2-on;True
 
+# OVERLAP (0:07:01)
 0:07:14;sysmon;scales-1-failure;down
 0:07:14;sysmon;automaticsolver;True
 0:07:14;sysmon;lights-2-on;True
 
+# non-overlap
 0:07:55;sysmon;scales-2-failure;up
 0:07:55;sysmon;automaticsolver;True
 0:07:55;sysmon;lights-2-on;True
 
+# OVERLAP (0:08:19 comm)
 0:08:17;sysmon;scales-1-failure;down
 0:08:17;sysmon;automaticsolver;False
 0:08:17;sysmon;lights-2-on;False
@@ -114,9 +130,19 @@
 # Empty
 
 
-# 3.c. Tracking events
-# Empty
-
+# 3.c. comm events
+0:00:08;communications;radioprompt;own
+0:01:08;communications;radioprompt;other
+0:02:42;communications;radioprompt;own
+0:03:02;communications;radioprompt;own
+0:04:09;communications;radioprompt;other
+0:05:20;communications;radioprompt;own
+0:06:47;communications;radioprompt;other
+0:07:01;communications;radioprompt;other
+0:08:19;communications;radioprompt;own
+0:08:34;communications;radioprompt;other
+0:09:30;communications;radioprompt;other
+0:09:47;communications;radioprompt;own
 
 # 4. End tasks at 10 minutes
 

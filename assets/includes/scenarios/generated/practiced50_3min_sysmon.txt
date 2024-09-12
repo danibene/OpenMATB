@@ -20,8 +20,8 @@
 #0:00:00;sysmon;lights-2-oncolor;blue   #couleur de la lumière quand elle est allumée
 # feedback and automation parameters
 0:00:00;sysmon;feedbacks-positive-active;True
-#0:00:00;sysmon;feedbacks-positive-color;green
 0:00:00;sysmon;feedbacks-negative-active;True
+#0:00:00;sysmon;feedbacks-positive-color;green
 #0:00:00;sysmon;feedbacks-negative-color;red
 #0:00:00;sysmon;feedbackduration;1500
 #0:00:00;sysmon;automaticsolver;False
