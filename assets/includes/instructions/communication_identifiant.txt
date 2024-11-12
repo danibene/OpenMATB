@@ -1,0 +1,4 @@
+<h1>Communications - Événements - Identifiant personnel</h1>
+
+<p>Dans la tâche de communication, les messages qui s'adressent à vous sont ceux qui commencent par votre identifiant : XXXX. </p>
+

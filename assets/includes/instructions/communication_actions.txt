@@ -1,0 +1,7 @@
+<h1>Communications - Actions - Identifiant personnel</h1>
+
+<p>Les instructions sont sous ce format : {Identifiant}, {identifiant}, mettre votre... à telle radio, telle fréquence.</p>
+
+<p>Vous devez utiliser les quatre flèches du clavier pour cette tâche.</p>
+<p>Pour changer de radio, appuyez sur les flèches qui pointent vers le haut ou vers le bas.</p>
+<p>Pour changer de fréquence, appuyez sur les flèches qui pointent vers la gauche pour diminuer la fréquence et la flèche de droite pour augmenter la fréquence.</p>

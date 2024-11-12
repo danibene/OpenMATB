@@ -1,0 +1,8 @@
+<h1>Présentation des tâches</h1>
+
+<p>Dans la tâche de gestion des ressources, le but est de limiter la fuite des deux réservoirs principaux (A et B) en utilisant un jeu de réservoirs de secours et de pompes, dont chacune a une puissance particulière.</p>
+
+<p>La tâche du participant est d'allumer/éteindre les pompes numérotées pour faire se rapprocher, du mieux que possible, les réservoirs A et B de leurs niveaux normaux (2500 unités).</p>
+
+<p>Pour allumer/éteindre une pompe, vous appuyez sur le numéro de la pompe au clavier. Des pompes peuvent parfois tomber en panne.</p>
+<img src=openmatb.png>

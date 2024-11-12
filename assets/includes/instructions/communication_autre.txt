@@ -1,0 +1,4 @@
+<h1>Communications - Événements - Autres messages</h1>
+
+<p>Dans la tâche de communication, les messages qui commencent par d'autres identifiant que le vôtre doivent être ignorés. </p>
+

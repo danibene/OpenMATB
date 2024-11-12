@@ -1,0 +1,143 @@
+# OpenMATB scenario generator
+
+# Name: diff30-50_5x2min_tot_10min
+# Date: 06/09/2024 01:45:16
+
+## 5 BLOCS DE 2 MINS
+
+# Task parameters
+    # Tracking parameters
+0:00:00;track;automaticsolver;True
+
+    # Sysmon parameters
+#0:00:00;sysmon;scales-1-name;TEMP1
+#0:00:00;sysmon;scales-1-key;Z
+#0:00:00;sysmon;scales-2-name;PRES1
+#0:00:00;sysmon;scales-3-name;TEMP2
+#0:00:00;sysmon;scales-4-name;PRES2
+#0:00:00;sysmon;lights-1-name;OK
+#0:00:00;sysmon;lights-2-name;WARNING
+#0:00:00;sysmon;automaticsolverdelay;10000
+#0:00:00;sysmon;feedbackduration;1500
+#0:00:00;sysmon;alerttimeout;10000
+
+
+# Start tasks and plugins 
+
+0:00:00;track;start
+0:00:00;sysmon;start
+0:00:00;communications;start
+0:00:00;resman;start
+0:00:00;performance;start
+
+# Block n� 1. Technical load = 30.0 %
+
+# sysmon events
+0:00:53;sysmon;lights-2-failure;True
+0:01:26;sysmon;lights-1-failure;True
+0:01:38;sysmon;lights-1-failure;True
+0:00:45;sysmon;scales-3-failure;True
+0:01:19;sysmon;scales-2-failure;True
+0:01:35;sysmon;scales-1-failure;True
+
+# comm events
+0:00:04;communications;radioprompt;other
+0:01:03;communications;radioprompt;own
+
+# resman 
+0:00:00;resman;tank-a-lossperminute;360
+0:00:00;resman;tank-b-lossperminute;360
+
+ 
+# Block n� 2. Technical load = 35.0 %
+
+# sysmon events
+0:02:38;sysmon;lights-1-failure;True
+0:02:57;sysmon;lights-2-failure;True
+0:03:48;sysmon;lights-1-failure;True
+0:02:22;sysmon;scales-2-failure;True
+0:02:53;sysmon;scales-4-failure;True
+0:03:07;sysmon;scales-1-failure;True
+
+# comm events
+0:02:33;communications;radioprompt;other
+0:03:24;communications;radioprompt;own
+0:03:37;communications;radioprompt;own
+
+# resman
+0:02:00;resman;tank-a-lossperminute;420
+0:02:00;resman;tank-b-lossperminute;420
+
+
+# Block n� 3. Technical load = 40.0 %
+
+# sysmon events
+0:04:27;sysmon;lights-2-failure;True
+0:04:50;sysmon;lights-2-failure;True
+0:05:09;sysmon;lights-1-failure;True
+0:05:28;sysmon;lights-1-failure;True
+0:04:19;sysmon;scales-4-failure;True
+0:04:48;sysmon;scales-3-failure;True
+0:05:35;sysmon;scales-2-failure;True
+0:05:47;sysmon;scales-1-failure;True
+
+# comm events
+0:05:07;communications;radioprompt;own
+0:05:27;communications;radioprompt;other
+0:05:42;communications;radioprompt;own
+
+# resman
+0:04:00;resman;tank-a-lossperminute;480
+0:04:00;resman;tank-b-lossperminute;480
+
+# Block n� 4. Technical load = 45.0 %
+
+# sysmon events
+0:06:12;sysmon;lights-1-failure;True
+0:06:27;sysmon;lights-2-failure;True
+0:06:54;sysmon;lights-2-failure;True
+0:07:34;sysmon;lights-1-failure;True
+0:06:09;sysmon;scales-1-failure;True
+0:06:30;sysmon;scales-4-failure;True
+0:06:57;sysmon;scales-3-failure;True
+0:07:26;sysmon;scales-2-failure;True
+
+# comm events
+0:06:13;communications;radioprompt;own
+0:06:58;communications;radioprompt;other
+0:07:12;communications;radioprompt;other
+0:07:44;communications;radioprompt;own
+
+# resman
+0:06:00;resman;tank-a-lossperminute;540
+0:06:00;resman;tank-b-lossperminute;540
+
+# Block n� 5. Technical load = 50.0 %
+
+# sysmon events 
+0:08:12;sysmon;lights-1-failure;True
+0:08:23;sysmon;lights-2-failure;True
+0:08:35;sysmon;lights-2-failure;True
+0:09:03;sysmon;lights-2-failure;True
+0:09:27;sysmon;lights-1-failure;True
+0:08:17;sysmon;scales-1-failure;True
+0:08:44;sysmon;scales-3-failure;True
+0:09:08;sysmon;scales-3-failure;True
+0:09:31;sysmon;scales-4-failure;True
+0:09:42;sysmon;scales-2-failure;True
+
+# comm events
+0:08:01;communications;radioprompt;other
+0:08:20;communications;radioprompt;own
+0:09:01;communications;radioprompt;other
+0:09:27;communications;radioprompt;own
+
+# resman
+0:08:00;resman;tank-a-lossperminute;600
+0:08:00;resman;tank-b-lossperminute;600
+
+0:10:00;communications;stop
+0:10:00;track;stop
+0:10:00;resman;stop
+0:10:00;sysmon;stop
+0:10:00;performance;stop

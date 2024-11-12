@@ -23,7 +23,7 @@ class SimpleHTML(AbstractWidget):
 
         self.vertex['text'] = HTMLLabel(text, x=x, y=y, anchor_x='center',
                                         anchor_y='center', group=G(draw_order), multiline=True, 
-                                        width=wrap_width, location=FileLocation('includes/img'))
+                                        width=wrap_width, location=FileLocation('include/.img'))
 
     def preparse(self, text):
         def get_nearest_size_of_pt(pt):

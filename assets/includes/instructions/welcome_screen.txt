@@ -1,0 +1,15 @@
+<h1>Présentation de la simulation<h1>
+<p>Bienvenue! Vous êtes sur le point de prendre part à une simulation dans laquelle vous devrez prendre le rôle d'un pilote d'avion qui doit gérer plusiques tâches en même temps.</p>
+
+<p>Vous devrez faire de votre mieux pour partager votre attention entre les tâches une tâche de surveillance du système, une tâche de communication avec la tour de contrôle et une tâche de gestion des ressources de carburant.</p>
+
+# <img src=capture.png>
+
+<p>L'enjeu consiste à parvenir à réaliser l'ensemble de ces tâches simultanément.</p>
+
+#<newpage>
+#<img src=capture.png>
+#<newpage>
+
+<newpage>
+<p>Appuyez sur espace pour voir un aperçu de l'interface.</p>

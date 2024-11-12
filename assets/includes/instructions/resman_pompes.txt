@@ -1,0 +1,9 @@
+<h1>Gestion des ressources - Système de pompes</h1>
+
+<p>Pour transférer du carburant des réservoirs de secours aux réservoir principaux, vous devez allumer/éteindre les pompes 1 à 8 numérotées à l'aide des touches 1-8 sur le clavier. </p>
+
+<p>Chaque pompe a son propre rythme de transfert de carburant.</p>
+<p>Lorsqu'une pompe est activée, le rythme du transfert de carburant est indiqué dans la section "État des pompes" à droite.</p>
+
+
+

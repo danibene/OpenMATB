@@ -23,7 +23,7 @@ class Track(AbstractPlugin):
             'joystickforce': validation.is_natural_integer,
             'inverseaxis': validation.is_boolean}
 
-        new_par = dict(cursorcolor=C['BLACK'], cursorcoloroutside=C['RED'], automaticsolver=False,
+        new_par = dict(cursorcolor=C['BLACK'], cursorcoloroutside=C['RED'], automaticsolver=True,
                        displayautomationstate=True, targetproportion=0.25, joystickforce=1,
                        inverseaxis=False)
         self.parameters.update(new_par)

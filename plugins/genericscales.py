@@ -68,7 +68,7 @@ class Genericscales(BlockingPlugin):
                 value_min, value_max, value_default = [int(v) for v in values.split('/')]
                 
                 self.add_widget(f'label_{l+1}', Simpletext, container=text_container,
-                                text=label, wrap_width=0.8, font_size=F['MEDIUM'], 
+                                text=label, wrap_width=0.8, font_size=F['SMALL'], 
                                 draw_order=self.m_draw)
                 
             

@@ -4,7 +4,7 @@
 
 import sys
 from pyglet.graphics import OrderedGroup as Group
-from pathlib import Path
+from pathlib import Path 
 from load.loader import resource_path
 
 REPLAY_MODE = len(sys.argv) > 1 and sys.argv[1] == '-r'
@@ -40,15 +40,15 @@ PATHS.update({k.upper():resource_path(Path('assets','includes', k))
 [path.mkdir(parents=False, exist_ok=True) for p, path in PATHS.items() if path.exists() is False]
 PATHS['SCENARIO_ERRORS'] = resource_path(Path("assets", "last_scenario_errors.log"))
 
-MATCHING_ALIAS = M = dict(sysmon=_('System monitoring'),
-                          track=_('Tracking'),
-                          scheduling=_('Scheduling'),
-                          communications=_('Communications'),
-                          resman=_('Resources management'),
-                          parallelport=_('Parallel port'),
-                          labstreaminglayer=_('Lab streaming layer'),
-                          instructions=_('Instructions'),
-                          genericscales=_('Generic scales'),
-                          eyetracker=_('Eye tracker'),
-                          performance=_('Performance'),
-                          generictrigger=_('Generic Trigger'))
+MATCHING_ALIAS = M = dict(sysmon=('System monitoring'),
+                          track=('Tracking'),
+                          scheduling=('Scheduling'),
+                          communications=('Communications'),
+                          resman=('Resources management'),
+                          parallelport=('Parallel port'),
+                          labstreaminglayer=('Lab streaming layer'),
+                          instructions=('Instructions'),
+                          genericscales=('Generic scales'),
+                          eyetracker=('Eye tracker'),
+                          performance=('Performance'),
+                          generictrigger=('Generic Trigger'))

@@ -1,0 +1,10 @@
+<h1>Gestion des ressources - Rythme d'écoulement et capacité des réservoirs</h1>
+
+<p>Dans la tâche de gestion des ressources, le carburant dans les deux réservoirs principaux (A et B) s'écoule et doit être maintenu entre les extrémités du rectangle noir sur le coté du réservoir. </p>
+
+<p>Les réservoirs C et D ont une capacité maximale de 2000 unité de carburant. </p> 
+<p>Les réservoirs E et F ont une capacité de carburant illimitée, ainsi ils ne peuvent jamais être vides. </p>
+
+
+
+

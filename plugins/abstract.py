@@ -196,9 +196,9 @@ class AbstractPlugin:
         # Should an automation state (string) be displayed ?
         if 'displayautomationstate' in self.parameters and self.parameters['displayautomationstate']:
             if 'automaticsolver' in self.parameters:
-                self.automode_string = _('MANUAL') if self.parameters['automaticsolver'] == False else _('AUTO')
+                self.automode_string =('MANUAL') if self.parameters['automaticsolver'] == False else ('AUTO')
             else:
-                self.automode_string = _('MANUAL')
+                self.automode_string =('MANUAL')
         else:
             self.automode_string = ''
         return 1
