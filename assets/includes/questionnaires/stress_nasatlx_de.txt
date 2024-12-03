@@ -1,0 +1,8 @@
+Stress;Wie würden Sie Ihr derzeitiges Stressniveau beschreiben?;Kein Stress/Schlimmster Stress möglich;0/10/5
+<newpage>
+Geistige Anforderungen;Wie viel geistige Anstrengung war bei der Informationsaufnahme und -verarbeitung erforderlich (z.B. Denken, Entscheiden, Rechnen, Erinnern, Hinsehen, Suchen...)? War die Aufgabe leicht oder anspruchsvoll, einfach oder komplex, erforderte sie hohe Genauigkeit oder war sie fehlertolerant?;Gering/Hoch;0/10/5
+Körperliche Anforderungen;Wie viel körperliche Aktivität war erforderlich (z.B. Ziehen, Drücken, Drehen, Steuern, Aktivieren,…)? War die Aufgabe leicht oder schwer, einfach oder anstrengend, erholsam oder mühselig?;Gering/Hoch;0/10/5
+Zeitliche Anforderungen;Wie viel Zeitdruck empfanden Sie hinsichtlich der Häufigkeit oder dem Takt, mit dem Aufgaben oder Aufgabenelemente auftraten? War die Abfolge langsam und geruhsam oder schnell und hektisch?;Gering/Hoch;0/10/5
+Leistung;Wie erfolgreich haben Sie Ihrer Meinung nach die vom Versuchsleiter (oder Ihnen selbst) gesetzten Ziele erreicht? Wie zufrieden waren Sie mit Ihrer Leistung bei der Verfolgung dieser Ziele?;Gut/Schlecht;0/10/5
+Anstrengung;Wie hart mussten sie arbeiten, um Ihren Grad an Aufgabenerfüllung zu erreichen?;Gering/Hoch;0/10/5
+Frustration;Wie unsicher, entmutigt, irritiert, gestresst und verärgert (versus sicher, bestätigt, zufrieden, entspannt und zufrieden mit sich selbst) fühlten Sie sich während der Aufgabe?;Gering/Hoch;0/10/5
