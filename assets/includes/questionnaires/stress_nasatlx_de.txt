@@ -1,4 +1,4 @@
-Stress;Wie würden Sie Ihr derzeitiges Stressniveau beschreiben?;Kein Stress/Schlimmster Stress möglich;0/10/5
+Stress;Wie gestresst haben Sie sich während der Aufgabe gefühlt?;Kein Stress/Schlimmster Stress möglich;0/10/5
 <newpage>
 Geistige Anforderungen;Wie viel geistige Anstrengung war bei der Informationsaufnahme und -verarbeitung erforderlich (z.B. Denken, Entscheiden, Rechnen, Erinnern, Hinsehen, Suchen...)? War die Aufgabe leicht oder anspruchsvoll, einfach oder komplex, erforderte sie hohe Genauigkeit oder war sie fehlertolerant?;Gering/Hoch;0/10/5
 Körperliche Anforderungen;Wie viel körperliche Aktivität war erforderlich (z.B. Ziehen, Drücken, Drehen, Steuern, Aktivieren,…)? War die Aufgabe leicht oder schwer, einfach oder anstrengend, erholsam oder mühselig?;Gering/Hoch;0/10/5
