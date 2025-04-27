@@ -1,4 +1,4 @@
-﻿# Traduction française du NASA-TLX. Cegarra & Morgado (2009)
+﻿# Traduction française du NASA-TLX. Cegarra & Morgado (2009) (+ Fatigue et Stress)
 <title>Fatigue et Stress
 Fatigue;Sur une échelle de 1 à 10, quel est votre niveau de fatigue?;Extrêmement alerte/Extrêmement endormi;0/10/5
 Stress;Sur une échelle de 1 à 10, quel est votre niveau de stress?;Aucun stress/Pire stress possible;0/10/5
